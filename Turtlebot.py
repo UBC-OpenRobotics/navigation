@@ -28,7 +28,7 @@ class TurtleBot():
 		# Complete right is 1 and complete left is -1
 		error_prev = self.error
 		error = plist[2] - DEPTH
-		p = 0.2 * error + error_prev
+		p = 0.2 * error
 		linearX = p
 		if plist[3] == 1:
 			AngularY = 0.2

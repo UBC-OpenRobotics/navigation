@@ -3,8 +3,10 @@ import rospy
 from geometry_msgs.msg import Twist
 
 class TurtleBot():
+	DEPTH = 5
 	def __init__(self):
 		# initiliaze
+		self.error = 0
 		rospy.init_node('Move', anonymous=False)
 
 	def new_dir(self, x,y):
@@ -20,6 +22,22 @@ class TurtleBot():
 
 	def stop(self):
 		self.new_dir(0,0)
+	
+	def follow(self, plist):
+		# list of a person being followed - ID, Name, Depth, Right/Left
+		# Complete right is 1 and complete left is -1
+		error_prev = self.error
+		error = plist[2] - DEPTH
+		p = 0.2 * error + error_prev
+		linearX = p
+		if plist[3] == 1:
+			AngularY = 0.2
+		elif plist[3] == -1:
+			AngularY = -0.2
+		else
+			AngularY = 0
+		new_dir(linearX,AngularY)
+		self.error = error
 
 	def shutdown(self):
 		# stop turtlebot

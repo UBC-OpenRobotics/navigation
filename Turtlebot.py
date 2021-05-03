@@ -7,6 +7,7 @@ class TurtleBot():
 	def __init__(self):
 		# initiliaze
 		self.error = 0
+		self.follow_id = 0
 		rospy.init_node('Move', anonymous=False)
 
 	def new_dir(self, x,y):
@@ -26,18 +27,23 @@ class TurtleBot():
 	def follow(self, plist):
 		# list of a person being followed - ID, Name, Depth, Right/Left
 		# Complete right is 1 and complete left is -1
+		follow_id = self.follow_id
+		res = next((item for item in plist if item['ID'] == follow_id), None)
 		error_prev = self.error
-		error = plist[2] - DEPTH
+		error = res['Depth'] - DEPTH
 		p = 0.2 * error
 		linearX = p
-		if plist[3] == 1:
+		if res['Angle'] == 1:
 			AngularY = 0.2
-		elif plist[3] == -1:
+		elif res['Angle'] == -1:
 			AngularY = -0.2
 		else
 			AngularY = 0
 		new_dir(linearX,AngularY)
 		self.error = error
+
+	def follow_id(self, id_number):
+		self.follow_id = id_number
 
 	def shutdown(self):
 		# stop turtlebot

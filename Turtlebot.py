@@ -29,18 +29,19 @@ class TurtleBot():
 		# Complete right is 1 and complete left is -1
 		follow_id = self.follow_id
 		res = next((item for item in plist if item['ID'] == follow_id), None)
-		error_prev = self.error
-		error = res['Depth'] - DEPTH
-		p = 0.2 * error
-		linearX = p
-		if res['Angle'] == 1:
-			AngularY = 0.2
-		elif res['Angle'] == -1:
-			AngularY = -0.2
-		else
-			AngularY = 0
-		new_dir(linearX,AngularY)
-		self.error = error
+		if res:
+			error_prev = self.error
+			error = res['Depth'] - DEPTH
+			p = 0.2 * error
+			linearX = p
+			if res['Angle'] == 1:
+				AngularY = 0.2
+			elif res['Angle'] == -1:
+				AngularY = -0.2
+			else
+				AngularY = 0
+			new_dir(linearX,AngularY)
+			self.error = error
 
 	def follow_id(self, id_number):
 		self.follow_id = id_number

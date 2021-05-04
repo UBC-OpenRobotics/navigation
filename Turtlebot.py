@@ -38,7 +38,7 @@ class TurtleBot():
 				AngularY = 0.2
 			elif res['Angle'] == -1:
 				AngularY = -0.2
-			else
+			else:
 				AngularY = 0
 			new_dir(linearX,AngularY)
 			self.error = error

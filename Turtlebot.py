@@ -6,9 +6,10 @@ class TurtleBot():
 	DEPTH = 5
 	def __init__(self):
 		# initiliaze
-		self.error = 0
-		self.follow_id = 0
-		rospy.init_node('Move', anonymous=False)
+		self.error_depth = 0
+		self.id = 0
+		self.error_depth_angle = 0
+		rospy.init_node('Turtlebot_wrapper', anonymous=False)
 
 	def new_dir(self, x,y):
 		# Create a publisher which can "talk" to TurtleBot and tell it to move
@@ -27,24 +28,28 @@ class TurtleBot():
 	def follow(self, plist):
 		# list of a person being followed - ID, Name, Depth, Right/Left
 		# Complete right is 1 and complete left is -1
-		follow_id = self.follow_id
-		res = next((item for item in plist if item['ID'] == follow_id), None)
+		follow_id = self.id
+		res = next((item for item in plist if item['id'] == follow_id), None)
 		if res:
-			error_prev = self.error
-			error = res['Depth'] - DEPTH
-			p = 0.2 * error
+			error_depth_prev = self.error_depth
+			error_angle_prev = self.error_angle
+			error_depth = res['depth'] - DEPTH
+			error_angle = res['angle'] - 0
+			p = 0.2 * error_depth
+			p_angle = 0.2 * error_angle
 			linearX = p
-			if res['Angle'] == 1:
-				AngularY = 0.2
-			elif res['Angle'] == -1:
-				AngularY = -0.2
+			if res['angle'] > 0:
+				AngularY = p_angle
+			elif res['angle'] < 0:
+				AngularY = -p_angle
 			else:
 				AngularY = 0
-			new_dir(linearX,AngularY)
-			self.error = error
+			self.new_dir(linearX,AngularY)
+			self.error_depth = error_depth
+			self.error_angle = error_angle
 
 	def follow_id(self, id_number):
-		self.follow_id = id_number
+		self.id = id_number
 
 	def shutdown(self):
 		# stop turtlebot
@@ -54,11 +59,31 @@ class TurtleBot():
 		# sleep just makes sure TurtleBot receives the stop command prior to shutting down the script
 			rospy.sleep(1)
 
+def listener():
+
+	# In ROS, nodes are uniquely named. If two nodes with the same
+	# name are launched, the previous one is kicked off. The
+	# anonymous=True flag means that rospy will choose a unique
+	# name for our 'listener' node so that multiple listeners can
+	# run simultaneously.
+	rospy.Subscriber("tbot/state", String, callback)
+
+	# spin() simply keeps python from exiting until this node is stopped
+	rospy.spin()
+
+def callback(data):
+	rospy.loginfo(rospy.get_caller_id() + "I heard %s", data.data)
+	loaded_dictionary = json.loads(data.data)
+	if loaded_dictionary['state'] == "follow":
+		tbot.follow(loaded_dictionary['details'])
+	# getattr(tbot, loaded_dictionary['state'])()
+
 if __name__ == '__main__':
 	try:
 
 		tbot = TurtleBot()
 		# Function on ctrl+c
 		rospy.on_shutdown(tbot.shutdown)
+		listner()
 	except:
 		rospy.loginfo("Move node terminated.")

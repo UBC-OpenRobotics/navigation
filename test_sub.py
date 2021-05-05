@@ -2,10 +2,12 @@
 import rospy
 import json
 from std_msgs.msg import String
+import Turtlebot
 
 def callback(data):
     rospy.loginfo(rospy.get_caller_id() + "I heard %s", data.data)
     loaded_dictionary = json.loads(data.data)
+    turtlebot.follow(loaded_dictionary)
     
 def listener():
 
@@ -15,11 +17,13 @@ def listener():
     # name for our 'listener' node so that multiple listeners can
     # run simultaneously.
     rospy.init_node('listener', anonymous=True)
-
-    rospy.Subscriber("chatter", String, callback)
+    turtlebot.follow_id(0)
+    rospy.Subscriber("testFollow", String, callback)
 
     # spin() simply keeps python from exiting until this node is stopped
     rospy.spin()
 
 if __name__ == '__main__':
+    turtlebot = Turtlebot()
     listener()
+    

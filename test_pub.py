@@ -5,7 +5,7 @@ import json
 from std_msgs.msg import String
 
 def talker():
-    pub = rospy.Publisher('chatter', String, queue_size=10)
+    pub = rospy.Publisher('testFollow', String, queue_size=10)
     rospy.init_node('talker', anonymous=True)
     a = 1
     rate = rospy.Rate(10) # 10hz

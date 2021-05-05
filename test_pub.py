@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # license removed for brevity
 import rospy
+import json
 from std_msgs.msg import String
 
 def talker():
@@ -24,8 +25,9 @@ def talker():
             "Angle": -a,
             },
         ]
-        rospy.loginfo(diclist)
-        pub.publish(diclist)
+        list_string = json.dumps(diclist)
+        rospy.loginfo(list_string)
+        pub.publish(list_string)
         rate.sleep()
 
 if __name__ == '__main__':

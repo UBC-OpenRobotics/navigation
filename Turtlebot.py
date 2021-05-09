@@ -1,6 +1,9 @@
 #!/usr/bin/env python
+import tf
+import geometry_msgs
 import rospy
 from geometry_msgs.msg import Twist
+import math
 
 class TurtleBot():
 	DEPTH = 5
@@ -50,6 +53,27 @@ class TurtleBot():
 
 	def follow_id(self, id_number):
 		self.id = id_number
+
+	def navigate(self, list_current_distance, list_current_orientation, list_target):
+		x_current = list_current_distance['x']
+		y_current = list_current_distance['y']
+		x_target = list_target['x']
+		y_target = list_target['y']
+		euler = tf.transformations.euler_from_quaternion(list_current_orientation)
+		list_current_orientation = euler[2]
+		target_angle = math.atan((y_target - y_current) / (x_target - x_cuurent))
+		angle = 0.2
+		while(angle != 0):
+			angle = 0.2 * (target_angle - list_current_orientation)
+			self.new_dir(0, angle)
+		pos = 0.2
+		distance = sqrt(pow((x_target - x_current),2) - pow((y_target - y_current),2))
+		while(pos != 0):
+			pos = 0.1 * distance
+			distance -= 0.1
+			self.new_dir(pos, 0)
+
+
 
 	def shutdown(self):
 		# stop turtlebot

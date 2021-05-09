@@ -19,18 +19,25 @@
   <build_depend>tf</build_depend>
   <build_depend>turtlebot</build_depend>
   <build_depend>urg_node</build_depend>
+  <build_depend>image_converter</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>cv_bridge</build_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>std_msgs</build_depend>
   <build_export_depend>astra_camera</build_export_depend>
   <build_export_depend>hokuyo_node</build_export_depend>
   <build_export_depend>move_base</build_export_depend>
   <build_export_depend>tf</build_export_depend>
   <build_export_depend>turtlebot</build_export_depend>
   <build_export_depend>urg_node</build_export_depend>
+  <build_export_depend>image_converter</build_export_depend>
   <exec_depend>astra_camera</exec_depend>
   <exec_depend>hokuyo_node</exec_depend>
   <exec_depend>move_base</exec_depend>
   <exec_depend>tf</exec_depend>
   <exec_depend>turtlebot</exec_depend>
   <exec_depend>urg_node</exec_depend>
+  <exec_depend>image_converter</exec_depend>
 
 
   <!-- The export tag contains other, unspecified, tags -->

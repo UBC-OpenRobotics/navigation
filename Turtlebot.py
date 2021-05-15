@@ -7,12 +7,27 @@ import math
 
 class TurtleBot():
 	DEPTH = 5
+	MODES = ('resting', 'follow', 'map_navigating')
+
 	def __init__(self):
 		# initiliaze
 		self.error_depth = 0
 		self.id = 0
 		self.error_depth_angle = 0
+		self._mode = "resting"
 		rospy.init_node('Turtlebot_wrapper', anonymous=False)
+
+	@property
+    def mode(self):
+        print("Turtlebot mode: " + self._mode)
+        return self._mode
+
+    @mode.setter
+    def mode(self, mode):
+        print("Turtlebot mode: " + self._mode)
+        if not mode in self.MODES:
+			raise ValueError("Invalid Turtlebot Mode")
+        self._mode = mode
 
 	def new_dir(self, x,y):
 		# Create a publisher which can "talk" to TurtleBot and tell it to move
@@ -29,6 +44,8 @@ class TurtleBot():
 		self.new_dir(0,0)
 	
 	def follow(self, plist):
+		if self.mode != 'follow':
+			return
 		# list of a person being followed - ID, Name, Depth, Right/Left
 		# Complete right is 1 and complete left is -1
 		follow_id = self.id
@@ -73,27 +90,13 @@ class TurtleBot():
 			distance -= 0.1
 			self.new_dir(pos, 0)
 
-
-
 	def shutdown(self):
 		# stop turtlebot
-			rospy.loginfo("Stop TurtleBot")
+			rospy.loginfo("Stopped TurtleBot")
 		# a default Twist has linear.x of 0 and angular.z of 0.  So it'll stop TurtleBot
 			self.cmd_vel.publish(Twist())
 		# sleep just makes sure TurtleBot receives the stop command prior to shutting down the script
 			rospy.sleep(1)
-
-def listener():
-
-	# In ROS, nodes are uniquely named. If two nodes with the same
-	# name are launched, the previous one is kicked off. The
-	# anonymous=True flag means that rospy will choose a unique
-	# name for our 'listener' node so that multiple listeners can
-	# run simultaneously.
-	rospy.Subscriber("tbot/state", String, callback)
-
-	# spin() simply keeps python from exiting until this node is stopped
-	rospy.spin()
 
 def callback(data):
 	rospy.loginfo(rospy.get_caller_id() + "I heard %s", data.data)
@@ -102,12 +105,17 @@ def callback(data):
 		tbot.follow(loaded_dictionary['details'])
 	# getattr(tbot, loaded_dictionary['state'])()
 
+def set_mode(data):
+	"""data: str"""
+	tbot.mode = data.data
+
 if __name__ == '__main__':
 	try:
-
 		tbot = TurtleBot()
 		# Function on ctrl+c
 		rospy.on_shutdown(tbot.shutdown)
-		listner()
+		rospy.Subscriber("tbot/state", String, set_mode)
+		# spin() simply keeps python from exiting until this node is stopped
+		rospy.spin()
 	except:
 		rospy.loginfo("Move node terminated.")

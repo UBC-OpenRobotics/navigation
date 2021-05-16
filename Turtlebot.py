@@ -16,7 +16,7 @@ class TurtleBot():
 		# initiliaze
 		self.error_depth = 0
 		self.id = 0
-		self.error_depth_angle = 0
+		self.error_angle = 0
 		self.goal_sent = False
 		self._mode = "resting"
 		rospy.init_node('Turtlebot_wrapper', anonymous=False)
@@ -68,15 +68,17 @@ class TurtleBot():
 			p = 0.2 * error_depth
 			p_angle = 0.2 * error_angle
 			linearX = p
-			if res['angle'] > 0:
-				AngularY = p_angle
-			elif res['angle'] < 0:
-				AngularY = -p_angle
+			if res['angle'] != 0:
+    			AngularY = -p_angle
 			else:
 				AngularY = 0
 			self.new_dir(linearX,AngularY)
 			self.error_depth = error_depth
 			self.error_angle = error_angle
+
+			follow_list = {"depth" = linearX, "angle" = AngularY}
+			follow_pub = rospy.Publisher('follow', String, queue_size = 10)
+			follow_pub.pub(follow_list)
 
 	def follow_id(self, id_number):
 		self.id = id_number
@@ -85,6 +87,7 @@ class TurtleBot():
     	if self.mode != 'navigate':
     			return
 		self.goal_sent = True
+		navigate_publish = rospy.Publisher('navigate', String, queue_size=10)
 		goal = MoveBaseGoal()
 		goal.target_pose.header.frame_id = 'map'
 		goal.target_pose.header.stamp = rospy.Time.now()
@@ -98,16 +101,16 @@ class TurtleBot():
 		success = self.move_base.wait_for_result(rospy.Duration(60)) 
 
 		state = self.move_base.get_state()
-		result = False
+		result = "False"
 
 		if success and state == GoalStatus.SUCCEEDED:
 			# We made it!
-			result = True
+			result = "True"
 		else:
 			self.move_base.cancel_goal()
 
 		self.goal_sent = False
-		return result
+		navigate_publish.publish(result)
 
 	def shutdown(self):
 		# stop turtlebot
@@ -123,7 +126,7 @@ def callback(data):
 	if loaded_dictionary['state'] == "follow":
 		tbot.follow(loaded_dictionary['details'])
 	if loaded_dictionary['state'] == "navigate":
-    		tbot.follow(loaded_dictionary['details'])
+    	tbot.follow(loaded_dictionary['details'])
 	# getattr(tbot, loaded_dictionary['state'])()
 
 def set_mode(data):

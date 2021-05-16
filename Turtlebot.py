@@ -92,34 +92,26 @@ class TurtleBot():
 	def follow_id(self, id_number):
 		self.id = id_number
 
-	def navigate(self, pos, quat):
-    	if self.mode != 'navigate':
-    			return
-		self.goal_sent = True
-		navigate_publish = rospy.Publisher('navigate', String, queue_size=10)
-		goal = MoveBaseGoal()
-		goal.target_pose.header.frame_id = 'map'
-		goal.target_pose.header.stamp = rospy.Time.now()
-		goal.target_pose.pose = Pose(Point(pos['x'], pos['y'], 0.000),
-								Quaternion(quat['r1'], quat['r2'], quat['r3'], quat['r4']))
-
-		# Start moving
-		self.move_base.send_goal(goal)
-
-		# Allow TurtleBot up to 60 seconds to complete task
-		success = self.move_base.wait_for_result(rospy.Duration(60)) 
-
-		state = self.move_base.get_state()
-		result = "False"
-
-		if success and state == GoalStatus.SUCCEEDED:
-			# We made it!
-			result = "True"
-		else:
-			self.move_base.cancel_goal()
-
-		self.goal_sent = False
-		navigate_publish.publish(result)
+	def navigate(self, list_current_distance, list_current_orientation, list_target):
+    	if self.mode != 'map_navigating':
+        		return
+    	x_current = list_current_distance['x']
+		y_current = list_current_distance['y']
+		x_target = list_target['x']
+		y_target = list_target['y']
+		euler = tf.transformations.euler_from_quaternion(list_current_orientation)
+		list_current_orientation = euler[2]
+		target_angle = math.atan((y_target - y_current) / (x_target - x_cuurent))
+		angle = 0.2
+		while(angle != 0):
+			angle = 0.2 * (target_angle - list_current_orientation)
+			self.new_dir(0, angle)
+		pos = 0.2
+		distance = sqrt(pow((x_target - x_current),2) - pow((y_target - y_current),2))
+		while(pos != 0):
+			pos = 0.1 * distance
+			distance -= 0.1
+			self.new_dir(pos, 0)
 
 	def shutdown(self):
 		# stop turtlebot

@@ -97,7 +97,7 @@ class TurtleBot():
 	# mock target kitchen = 20,-4
 	# mock target living room = 2, 10
 	def navigate(self, list_current_distance, list_current_orientation, list_target):
-    	if self.mode != 'map_navigating,':
+    	if self.mode != 'map_navigating':
         		return
     	x_current = list_current_distance['x']
 		y_current = list_current_distance['y']

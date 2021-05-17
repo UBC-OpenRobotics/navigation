@@ -96,14 +96,18 @@ class TurtleBot():
 	# mock current distance = 0,0
 	# mock target kitchen = 20,-4
 	# mock target living room = 2, 10
-	def navigate(self, list_current_distance, list_current_orientation, list_target):
+	def navigate(self, data):
 		if self.mode != 'map_navigating':
         		return
-		x_current = list_current_distance['x']
-		y_current = list_current_distance['y']
-		x_target = list_target['x']
-		y_target = list_target['y']
-		euler = tf.transformations.euler_from_quaternion(list_current_orientation)
+		nav_list = json.loads(data.data)
+		result = "False"
+		print(nav_list)
+		x_current = nav_list['current']['x']
+		y_current = nav_list['current']['y']
+		x_target = nav_list['target']['x']
+		y_target = nav_list['target']['y']
+		quaternion = (nav_list['current']['r1'], nav_list['current']['r2'], nav_list['current']['r3'], nav_list['current']['r4'])
+		euler = tf.transformations.euler_from_quaternion(quaternion)
 		list_current_orientation = euler[2]
 		target_angle = math.atan((y_target - y_current) / (x_target - x_cuurent))
 		angle = 0.2
@@ -116,6 +120,11 @@ class TurtleBot():
 			pos = 0.1 * distance
 			distance -= 0.1
 			self.new_dir(pos, 0)
+		
+		rospy.loginfo("Navigated to target")
+		result = "True"
+		navigate_publish = rospy.Publisher('navigate', String, queue_size=10)
+		navigate_publish.publish(result)
 
 	def shutdown(self):
 		# stop turtlebot
@@ -146,7 +155,8 @@ if __name__ == '__main__':
 
 		rospy.Subscriber("tbot/state", String, set_mode)
 		# TODO: use other  message types other than JSON String for the following subscribers
-		rospy.Subscriber("ppl_detected", String, tbot.follow) 
+		rospy.Subscriber("ppl_detected", String, tbot.follow)
+		rospy.Subscriber("map_navigate", String, tbot.navigate)  
 		# spin() simply keeps python from exiting until this node is stopped
 		rospy.spin()
 	except:

@@ -24,22 +24,24 @@ class task3_launch():
     	# initiliaze
         rospy.init_node('task3', anonymous=True)
 		self.pub = rospy.Publisher('tbot/state', String, queue_size=10)
+        self.navigate_pub = rospy.Publisher('map_navigate', String, queue_size=10)
+
+    def folllow_object_callback(data):
+        rospy.loginfo(rospy.get_caller_id() + "I heard %s", data.data)
+        if (data.data['depth'] == 0 &&  data.data['angle'] == 0)
+            # TODO: point to empty seat
 
     def follow_person_callback(data):
         rospy.loginfo(rospy.get_caller_id() + "I heard %s", data.data)
-        # TODO: point to empty seat
-
-    def follow_person_callback(data):
-        rospy.loginfo(rospy.get_caller_id() + "I heard %s", data.data)
-        # TODO: Face and point guest introductions
-        text_to_speech(f'Hi this is {name}. Their favorite drink is {drink}')
-        # TODO: Empty seat detection
-        # TODO: fix follow
-        state_list = {"state" = "follow"}
-        self.pub.publish(state_list)
-        rospy.Subscriber('follow', String, follow_object_callback)
-        rospy.spin()
-        # TODO: point to empty seat
+        if (data.data['depth'] == 0 &&  data.data['angle'] == 0)
+            # TODO: Face and point guest introductions
+            text_to_speech(f'Hi this is {name}. Their favorite drink is {drink}')
+            # TODO: Empty seat detection
+            # TODO: fix follow
+            state_list = {"state" = "follow"}
+            self.pub.publish(state_list)
+            rospy.Subscriber('follow', String, follow_object_callback)
+            rospy.spin()
 
     def nav_callback(data):
         rospy.loginfo(rospy.get_caller_id() + "I heard %s", data.data)
@@ -81,11 +83,14 @@ class task3_launch():
         time.sleep(3)
         # TODO: sequence to make robot aware that a guest is arriving
 
-        # TODO: change the pos and quart in details from a real map for door
-        state_list = {
-            "state" = "navigate",
-            "details" = {"pos" = [1,1], "quart" = [0,0,0,0]}
-            }
+        # mock current orientation = 0,0,0,1
+	    # mock current distance = 0,0
+	    # mock target kitchen = 20,-4
+	    # mock target living room = 2, 10
+        nav_list = {"current": {"x": 0, "y": 0, "r1": 0, "r2": 0, "r3": 0, "r4": 1},
+                    "target": {"x": 20, "y:" -4}}
+        self.navigate_pub.publish(nav_list)
+        state_list = {"state" = "map_navigating"}
         self.pub.publish(state_list)
         rospy.Subscriber('navigate', String, nav_callback)
         rospy.spin()

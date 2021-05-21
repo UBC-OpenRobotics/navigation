@@ -70,7 +70,7 @@ class task1_launch():
         self.carry_pub.publish("dropoff")
 
         #TODO: Operator thanks robot and robot replies
-        response = stt.wake_word("Thank")
+        response = stt.wake_word("Thank you")
         text_to_speech("You're welcome")
 
 

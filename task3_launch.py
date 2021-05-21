@@ -24,19 +24,28 @@ class task3_launch():
     	# initiliaze
         rospy.init_node('task3', anonymous=True)
 		self.pub = rospy.Publisher('tbot/state', String, queue_size=10)
+        self.arm_pub = rospy.Publisher('arm_pose', String, queue_size=10)
         self.navigate_pub = rospy.Publisher('map_navigate', String, queue_size=10)
 
     def folllow_object_callback(data):
         rospy.loginfo(rospy.get_caller_id() + "I heard %s", data.data)
         if (data.data['depth'] == 0 &&  data.data['angle'] == 0)
             # TODO: point to empty seat
+            self.arm_pub.publish("pick up")
+            time.sleep(3)
+            self.arm_pub.publish("drop off")
 
     def follow_person_callback(data):
         rospy.loginfo(rospy.get_caller_id() + "I heard %s", data.data)
         if (data.data['depth'] == 0 &&  data.data['angle'] == 0)
             # TODO: Face and point guest introductions
+            # pick up is pointing
+            self.arm_pub.publish("pick up")
             text_to_speech(f'Hi this is {name}. Their favorite drink is {drink}')
+            time.sleep(3)
             # TODO: Empty seat detection
+            text_to_speech('Let me find you an empty seat')
+            self.arm_pub.publish("drop off")
             # TODO: fix follow
             state_list = {"state" = "follow"}
             self.pub.publish(state_list)

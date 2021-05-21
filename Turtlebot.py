@@ -19,12 +19,12 @@ class TurtleBot():
 		# initiliaze
 		self.error_depth = 0
   		self.error_angle = 0
-		self.id = 'person 1'
   		# Create a publisher which can "talk" to TurtleBot and tell it to move
 		self.cmd_vel = rospy.Publisher('cmd_vel_mux/input/navi', Twist, queue_size=10)
   
 		self.error_depth_angle = 0
 		self.goal_sent = False
+		self.target = 'person 1'
 		self._mode = "follow"
 		rospy.init_node('Turtlebot_wrapper', anonymous=False)
 		# # Tell the action client that we want to spin a thread by default
@@ -52,6 +52,9 @@ class TurtleBot():
 		move_cmd.linear.x = x
 		move_cmd.angular.z = y
 		self.cmd_vel.publish(move_cmd)
+  
+	def set_target(self, data):
+		self.target = data.data
 
 	def stop(self):
 		self.new_dir(0,0)
@@ -66,7 +69,7 @@ class TurtleBot():
   		print(plist)
 		# list of a person being followed - ID, Name, Depth, Right/Left
 		# Complete right is 1 and complete left is -1
-		follow_id = self.id
+		follow_id = self.target
 		res = next((item for item in plist if item['id'] == follow_id), None)
 		if res:
 			error_depth_prev = self.error_depth
@@ -85,38 +88,43 @@ class TurtleBot():
 			self.error_depth = error_depth
 			self.error_angle = error_angle
 
-	def follow_id(self, id_number):
-		self.id = id_number
-
-	def navigate(self, pos={'x':1, 'y':1}, quat=None):
-		quat = {'r'+ str(i):0 for i in range(1,5)}
+			follow_list = {"depth" = linearX, "angle" = AngularY}
+			follow_pub = rospy.Publisher('follow', String, queue_size = 10)
+			follow_pub.pub(follow_list)
+   
+	# mock current orientation = 0,0,0,1
+	# mock current distance = 0,0
+	# mock target kitchen = 20,-4
+	# mock target living room = 2, 10
+	def navigate(self, data):
 		if self.mode != 'map_navigating':
-			return
-		self.goal_sent = True
-		goal = MoveBaseGoal()
-		goal.target_pose.header.frame_id = 'map'
-		goal.target_pose.header.stamp = rospy.Time.now()
-		goal.target_pose.pose = Pose(Point(pos['x'], pos['y'], 0.000),
-								Quaternion(quat['r1'], quat['r2'], quat['r3'], quat['r4']))
-
-		# Start moving
-		self.move_base.send_goal(goal)
-		print("goal sent")
-
-		# Allow TurtleBot up to 60 seconds to complete task
-		success = self.move_base.wait_for_result(rospy.Duration(60)) 
-
-		state = self.move_base.get_state()
-		result = False
-
-		if success and state == GoalStatus.SUCCEEDED:
-			# We made it!
-			result = True
-		else:
-			self.move_base.cancel_goal()
-
-		self.goal_sent = False
-		return result
+        		return
+		nav_list = json.loads(data.data)
+		result = "False"
+		print(nav_list)
+		x_current = nav_list['current']['x']
+		y_current = nav_list['current']['y']
+		x_target = nav_list['target']['x']
+		y_target = nav_list['target']['y']
+		quaternion = (nav_list['current']['r1'], nav_list['current']['r2'], nav_list['current']['r3'], nav_list['current']['r4'])
+		euler = tf.transformations.euler_from_quaternion(quaternion)
+		list_current_orientation = euler[2]
+		target_angle = math.atan((y_target - y_current) / (x_target - x_cuurent))
+		angle = 0.2
+		while(angle != 0):
+			angle = 0.2 * (target_angle - list_current_orientation)
+			self.new_dir(0, angle)
+		pos = 0.2
+		distance = sqrt(pow((x_target - x_current),2) - pow((y_target - y_current),2))
+		while(pos != 0):
+			pos = 0.1 * distance
+			distance -= 0.1
+			self.new_dir(pos, 0)
+		
+		rospy.loginfo("Navigated to target")
+		result = "True"
+		navigate_publish = rospy.Publisher('navigate', String, queue_size=10)
+		navigate_publish.publish(result)
 
 	def shutdown(self):
 		# stop turtlebot
@@ -139,15 +147,18 @@ def set_mode(data):
 	print(tbot.mode)
 
 if __name__ == '__main__':
- 	tbot = TurtleBot()
-	# Function on ctrl+c
-	rospy.on_shutdown(tbot.shutdown)
-	rospy.Subscriber("tbot/state", String, set_mode)
-	# TODO: use other  message types other than JSON String for the following subscribers
-	rospy.Subscriber("ppl_detected", String, tbot.follow)
-	# spin() simply keeps python from exiting until this node is stopped
-	rospy.spin()
-  	try:
-		pass
+ 	try:
+		tbot = TurtleBot()
+		print(rospy.is_shutdown())
+		# Function on ctrl+c
+		rospy.on_shutdown(tbot.shutdown)
+
+		rospy.Subscriber("tbot/state", String, set_mode)
+		rospy.Subscriber("tbot/target", String, tbot.set_target)
+		# TODO: use other  message types other than JSON String for the following subscribers
+		rospy.Subscriber("ppl_detected", String, tbot.follow)
+		rospy.Subscriber("map_navigate", String, tbot.navigate)  
+		# spin() simply keeps python from exiting until this node is stopped
+		rospy.spin()
 	except:
 		rospy.loginfo("Move node terminated.")

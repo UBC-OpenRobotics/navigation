@@ -25,14 +25,14 @@ class TurtleBot():
   
 		self.error_depth_angle = 0
 		self.goal_sent = False
-		self._mode = "resting"
+		self._mode = "follow"
 		rospy.init_node('Turtlebot_wrapper', anonymous=False)
-		# Tell the action client that we want to spin a thread by default
-		self.move_base = actionlib.SimpleActionClient("move_base", MoveBaseAction)
-		rospy.loginfo("Wait for the action server to come up")
+		# # Tell the action client that we want to spin a thread by default
+		# self.move_base = actionlib.SimpleActionClient("move_base", MoveBaseAction)
+		# rospy.loginfo("Wait for the action server to come up")
 
-		# Allow up to 5 seconds for the action server to come up
-		self.move_base.wait_for_server(rospy.Duration(5))
+		# # Allow up to 5 seconds for the action server to come up
+		# self.move_base.wait_for_server(rospy.Duration(5))
 
 	@property
 	def mode(self):
@@ -73,7 +73,7 @@ class TurtleBot():
 			error_angle_prev = self.error_angle
 			error_depth = res['depth'] - self.DEPTH
 			error_angle = res['angle'] - 0
-			p = 0.2 * error_depth
+			p = -0.02 * error_depth
 			p_angle = 0.3 * error_angle
 			linearX = p
 			if res['angle'] != 0:
@@ -88,9 +88,10 @@ class TurtleBot():
 	def follow_id(self, id_number):
 		self.id = id_number
 
-	def navigate(self, pos, quat):
-    	if self.mode != 'navigate':
-    			return
+	def navigate(self, pos={'x':1, 'y':1}, quat=None):
+		quat = {'r'+ str(i):0 for i in range(1,5)}
+		if self.mode != 'map_navigating':
+			return
 		self.goal_sent = True
 		goal = MoveBaseGoal()
 		goal.target_pose.header.frame_id = 'map'
@@ -100,6 +101,7 @@ class TurtleBot():
 
 		# Start moving
 		self.move_base.send_goal(goal)
+		print("goal sent")
 
 		# Allow TurtleBot up to 60 seconds to complete task
 		success = self.move_base.wait_for_result(rospy.Duration(60)) 
@@ -137,16 +139,15 @@ def set_mode(data):
 	print(tbot.mode)
 
 if __name__ == '__main__':
- 	try:
-		tbot = TurtleBot()
-		print(rospy.is_shutdown())
-		# Function on ctrl+c
-		rospy.on_shutdown(tbot.shutdown)
-
-		rospy.Subscriber("tbot/state", String, set_mode)
-		# TODO: use other  message types other than JSON String for the following subscribers
-		rospy.Subscriber("ppl_detected", String, tbot.follow) 
-		# spin() simply keeps python from exiting until this node is stopped
-		rospy.spin()
+ 	tbot = TurtleBot()
+	# Function on ctrl+c
+	rospy.on_shutdown(tbot.shutdown)
+	rospy.Subscriber("tbot/state", String, set_mode)
+	# TODO: use other  message types other than JSON String for the following subscribers
+	rospy.Subscriber("ppl_detected", String, tbot.follow)
+	# spin() simply keeps python from exiting until this node is stopped
+	rospy.spin()
+  	try:
+		pass
 	except:
 		rospy.loginfo("Move node terminated.")

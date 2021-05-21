@@ -75,7 +75,10 @@ class TurtleBot():
 			error_angle = res['angle'] - 0
 			p = 0.2 * error_depth
 			p_angle = 0.3 * error_angle
-			linearX = p
+			if error_depth > self.DEPTH:
+    			linearX = p
+			else
+				linearX = -p
 			if res['angle'] != 0:
 				AngularY = -p_angle
 			else:

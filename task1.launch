@@ -1,0 +1,14 @@
+<launch>
+  
+  <!--listeners-->
+  <node name="arm_pose_command" pkg="arm_nav" type="pose_command_arm_nav.py"/>
+  <node name="Turtlebot_wrapper" pkg="Navigation" type="Turtlebot.py"/>
+  
+  <!--still need node names for map_navigate, tbot/target, tbot/state-->
+  <node name="" pkg="" type="listener"/>
+  <node name="" pkg="" type="listener"/>
+  <node name="" pkg="" type="listener"/>
+  
+  <!--publishers-->
+  <node name="" pkg="" type=""/>
+</launch>

@@ -19,11 +19,11 @@ def text_to_speech(text):
 class task1_launch():
     def __init__(self):
         #initialize
+        rospy.init_node('task1', anonymous=True) 
         self.state_pub = rospy.Publisher('tbot/state', String, queue_size=10)
         self.target_pub  = rospy.Publisher('/tbot/target', String, queue_size=10)   
         self.navigate_pub = rospy.Publisher('map_navigate', String, queue_size=10)
         self.carry_pub = rospy.Publisher('arm_pose', String, queue_size=10)
-        rospy.init_node('task1', anonymous=True) 
 
     def locate_bag(self, data):
         rospy.loginfo(rospy,get_caller_id() + "I heard %s ", data.data)
@@ -40,11 +40,7 @@ class task1_launch():
             print(response)
             self.carry_pub.publish("carry") 
 
-    def follow_object_callback(data):
-        rospy.loginfo(rospy.get_caller_id() + "I heard %s", data.data)
-        if (data.data['depth'] == 0 &&  data.data['angle'] == 0)
-
-    def follow_person_callback(self, data):
+   def follow_person_callback(self, data):
         rospy.loginfo(rospy.get_caller_id() + "I heard %s", data.data)
         #TODO: Robot indicates to the operator when it is ready to follow.
         if (data.data == "True"):

@@ -25,7 +25,7 @@ class task2_launch():
         rospy.init_node('task2', anonymous=True)
         self.name = "name"
         self.location = "location"
-		self.pub = rospy.Publisher('tbot/state', String, queue_size=10)
+        self.pub = rospy.Publisher('tbot/state', String, queue_size=10)
         self.navigate_pub = rospy.Publisher('map_navigate', String, queue_size=10)
 
 
@@ -58,6 +58,7 @@ class task2_launch():
             nav_list = {"current": {"x": 0, "y": 0, "r1": 0, "r2": 0, "r3": 0, "r4": 1},
                         "target": {"x": 2, "y:" 10}}
             self.pub.publish(state_list)
+            self.navigate_pub.publish(nav_list)
             rospy.Subscriber('navigate', String, nav_callback)
             rospy.wait_for_message()
 

@@ -8,21 +8,25 @@ import time
 import nltk
 import rospy
 
-#TODO: Robot detects bag using YOLO
-#TODO: Robot navigates to bag
-#TODO: Robot extends hand near bag and says "Hand me the bag"
-#TODO: Robot indicates to the operator when it is ready to follow.
+stt = STT()
+tts = pyttsx3.init()
+
+def text_to_speech(text):
+    print(text)
+    tts.say(text)
+    tts.runAndWait()
 
 class task1_launch():
     def __init__(self):
         #initialize
+        rospy.init_node('task1', anonymous=True) 
         self.state_pub = rospy.Publisher('tbot/state', String, queue_size=10)
         self.target_pub  = rospy.Publisher('/tbot/target', String, queue_size=10)   
         self.navigate_pub = rospy.Publisher('map_navigate', String, queue_size=10)
         self.carry_pub = rospy.Publisher('arm_pose', String, queue_size=10)
-        rospy.init_node('task1', anonymous=True) 
 
     def locate_bag(self, data):
+<<<<<<< HEAD
         #Define robot's target object
         ##self.Subscriber("cmd_vel_mux/input/navi", Twist, queue_size=10)
         target = "bag"
@@ -39,8 +43,23 @@ class task1_launch():
     def follow_object_callback(data):
          rospy.loginfo(rospy.get_caller_id() + "I heard %s", data.data)
         if (data.data['depth'] == 0 and data.data['angle'] == 0)
+=======
+        rospy.loginfo(rospy,get_caller_id() + "I heard %s ", data.data)
+        if (data.data == "True"):
+            #TODO: Robot detects bag using YOLO
+            target = "bag"
+            self.target_pub.publish(target)
+            #TODO: robot follow path to bag
+            state_list = {"state" = "follow"}
+            self.state_pub.publish(state_list)
+            #TODO: "Hand me bag", then robot extends arm
+            text_to_speech("Please hand me the bag")
+            response = stt.recognize()
+            print(response)
+            self.carry_pub.publish("carry") 
+>>>>>>> fc6502171f1b2c895c1548f58e46bc5845cc5014
 
-    def follow_person_callback(self, data):
+   def follow_person_callback(self, data):
         rospy.loginfo(rospy.get_caller_id() + "I heard %s", data.data)
         #TODO: Robot indicates to the operator when it is ready to follow.
         if (data.data == "True"):
@@ -56,6 +75,19 @@ class task1_launch():
         self.pub.publish(state_list)
         rospy.Subscriber('follow', String, follow_person_callback)
         rospy.spin()
+
+    def communicate(self, data):
+        #TODO: After reaching car, operator says "give me bag"
+        rospy.loginfo(rospy.get_caller_id() + "I heard %s", data.data)
+        
+        #TODO: wait for operator to ask for the bag then give to them
+        response = stt.wake_word("Give")
+        self.carry_pub.publish("dropoff")
+
+        #TODO: Operator thanks robot and robot replies
+        response = stt.wake_word("Thank you")
+        text_to_speech("You're welcome")
+
 
     #TODO: Return inside arena, SLAM navigation with map localization
     #TODO: Robot returns to starting point

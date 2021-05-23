@@ -27,6 +27,7 @@ class TurtleBot():
 		self.target = 'person 1'
 		self._mode = "follow"
 		rospy.init_node('Turtlebot_wrapper', anonymous=False)
+  		self.follow_pub = rospy.Publisher('follow', String, queue_size = 10)
 		# # Tell the action client that we want to spin a thread by default
 		# self.move_base = actionlib.SimpleActionClient("move_base", MoveBaseAction)
 		# rospy.loginfo("Wait for the action server to come up")
@@ -64,7 +65,7 @@ class TurtleBot():
 			return
 		plist = json.loads(data.data)
 		if not plist:
-			self.stop
+			self.stop()
    			return
   		print(plist)
 		# list of a person being followed - ID, Name, Depth, Right/Left
@@ -76,11 +77,11 @@ class TurtleBot():
 			error_angle_prev = self.error_angle
 			error_depth = res['depth'] - self.DEPTH
 			error_angle = res['angle'] - 0
-			p = -0.02 * error_depth
-			p_angle = 0.3 * error_angle
+			p = 0.02 * error_depth
+			p_angle = 0.5 * error_angle
 			if error_depth > self.DEPTH:
-    			linearX = p
-			else
+				linearX = p
+			else:
 				linearX = -p
 			if res['angle'] != 0:
 				AngularY = -p_angle
@@ -91,9 +92,9 @@ class TurtleBot():
 			self.error_depth = error_depth
 			self.error_angle = error_angle
 
-			follow_list = {"depth" = linearX, "angle" = AngularY}
-			follow_pub = rospy.Publisher('follow', String, queue_size = 10)
-			follow_pub.pub(follow_list)
+			follow_list = {"depth": linearX, "angle" : AngularY}
+			
+			self.follow_pub.publish(follow_list)
    
 	# mock current orientation = 0,0,0,1
 	# mock current distance = 0,0

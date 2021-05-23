@@ -38,7 +38,7 @@ class task1_launch():
 
     def follow_object_callback(data):
          rospy.loginfo(rospy.get_caller_id() + "I heard %s", data.data)
-        if (data.data['depth'] == 0 &&  data.data['angle'] == 0)
+        if (data.data['depth'] == 0 and data.data['angle'] == 0)
 
     def follow_person_callback(self, data):
         rospy.loginfo(rospy.get_caller_id() + "I heard %s", data.data)

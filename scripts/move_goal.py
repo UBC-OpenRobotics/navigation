@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import rospy
 import actionlib
@@ -11,9 +11,11 @@ def movebase_client():
     goal.target_pose.header.frame_id = "map"
     goal.target_pose.header.stamp = rospy.Time.now()
     # Example Move Base Action
-    goal.target_pose.pose.position.x = 0.5
-    goal.target_pose.pose.position.x = 0.6
-    goal.target_pose.pose.orientation.w = 1.0
+    goal.target_pose.pose.position.x = 0.6094982059607833
+    goal.target_pose.pose.position.y = -0.39999928174738597
+    goal.target_pose.pose.position.z = 0.0 
+    goal.target_pose.pose.orientation.w = 0.9063164541178897
+    goal.target_pose.pose.orientation.z = 0.4225996746273889
     client.send_goal(goal)
     wait = client.wait_for_result()
    # If the result doesn't arrive, assume the Server is not available

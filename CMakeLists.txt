@@ -11,6 +11,7 @@ find_package(catkin REQUIRED COMPONENTS
     roscpp
     rospy
     message_generation
+    geometry_msgs
 )
 
 ## System dependencies are found with CMake's conventions
@@ -57,6 +58,8 @@ catkin_python_setup()
 add_service_files(
     FILES
     NamedLocation.srv
+    ArmAdjustment.srv
+    RelLocation.srv
 )
 ## Generate actions in the 'action' folder
 # add_action_files(
@@ -70,6 +73,7 @@ add_service_files(
 generate_messages(
     DEPENDENCIES
     std_msgs
+    geometry_msgs
 )
 
 ################################################

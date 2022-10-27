@@ -59,7 +59,7 @@ add_service_files(
     FILES
     NamedLocation.srv
     ArmAdjustment.srv
-    RelLocation.srv
+    RelativeLocation.srv
 )
 ## Generate actions in the 'action' folder
 # add_action_files(

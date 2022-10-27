@@ -55,10 +55,6 @@
 import rospy
 import tf2_ros
 
-
-rospy.init_node('ipython')
-
-
 import tf
 import rospy
 import tf2_ros

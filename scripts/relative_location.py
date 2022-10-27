@@ -2,52 +2,50 @@
 import rospy
 from geometry_msgs.msg import Point
 
-from navigation.srv import NamedLocation, NamedLocationResponse
-from pathlib import Path
-from geometry_msgs.msg import PoseWithCovarianceStamped
+from navigation.srv import RelativeLocation, RelativeLocationResponse
+from geometry_msgs.msg import PoseStamped
 from move_base_msgs.msg import MoveBaseAction, MoveBaseGoal
-import actionlib
 
-class NamedLocationsHandler:
-    def __init__(self) -> None:
-        self.locations = {}
-        self.locs_file = Path(rospy.get_param('named_locations_file', 'locations.pickle'))
-        self.move_base_client = actionlib.SimpleActionClient('move_base',MoveBaseAction)
-        self.move_base_client.wait_for_server()            
-        self.load_locations_file()
+import rospy
+import tf2_ros
 
-    
+import tf
+import rospy
+import tf2_ros
+import tf2_geometry_msgs
+import time
+import yaml
 
-    def handle_request(self, req):
-        try:
-            if (req.action == "Goto"):
-                goal = MoveBaseGoal()
-                goal.target_pose.header.frame_id = "map"
-                goal.target_pose.header.stamp = rospy.Time.now()
-                # Example Move Base Action
-                goal.target_pose.pose = self.locations[req.name]
-                self.move_base_client.send_goal(goal)
-                wait = self.move_base_client.wait_for_result()
-                if not wait:
-                    rospy.signal_shutdown("Move_base server unavailable!")
-                else:
-                # Result of executing the action
-                    rospy.loginfo("Move Base Goal Executed" if self.move_base_client.get_result() else "Failed")
-            elif(req.action == "Name"):
-                pose_msg = rospy.wait_for_message('/amcl_pose', PoseWithCovarianceStamped)
-                self.locations[req.name]=pose_msg.pose.pose
-                print(f"saved location {req.name} as {pose_msg.pose.pose}")
-                self.save_locations_file()
-            return NamedLocationResponse(True)
-        except:
-            return NamedLocationResponse(False)
 
-def add_two_ints_server():
-    rospy.init_node('nav_named_locs_server')
-    nl = NamedLocationsHandler()
-    s = rospy.Service('/navigate_named_location', NamedLocation, nl.handle_request)
-    print("Ready process locations")
-    rospy.spin()
+def handle_request(data):
+    try:
+        transform = tf_buffer.lookup_transform('odom', 'base_link', rospy.Time(0)) # rospy.Time(0) gets latest transform
+        pose_stamped = PoseStamped()
+        pose_stamped.pose.position.x = data.x
+        pose_stamped.pose.position.y = data.y
+        pose_transformed = tf2_geometry_msgs.do_transform_pose(pose_stamped, transform)
+        pub.publish(pose_transformed)
+
+        return RelativeLocationResponse(True)
+    except:
+        return RelativeLocationResponse(False)
 
 if __name__ == "__main__":
-    add_two_ints_server()
+    rospy.init_node('nav_rel_locs_server')
+
+    tf_buffer = tf2_ros.Buffer()
+    tf_listener = tf2_ros.TransformListener(tf_buffer)
+    time.sleep(1.0) # wait for transform buffer to at least hear one message
+    frames_dict = yaml.safe_load(tf_buffer.all_frames_as_yaml())
+    frames_list = list(frames_dict.keys())
+    if 'odom' not in frames_list: raise rospy.ServiceException('No odom frame')
+    if 'base_link' not in frames_list: raise rospy.ServiceException('No base_link frame')
+    pub = rospy.Publisher('/move_base_simple/goal', PoseStamped, queue_size=1)
+
+
+    s = rospy.Service('/navigate_relative_location', RelativeLocation, handle_request)
+    print("Ready to process relative locations")
+    rospy.spin()
+
+    
+    

@@ -4,6 +4,12 @@ import time
 import matplotlib.pyplot as plt
 from simple_pid import PID
 import math
+import json
+
+from rospy import Publisher, Subscriber
+import rospy
+from std_msgs.msg import String
+from geometry_msgs.msg import Twist
 
 
 class TurtlebotPID:
@@ -66,6 +72,13 @@ class TurtlebotPID:
         self.r += lin_speed * friction_coeff * dt + drift * dt
         self.the += ang_speed * friction_coeff * dt
 
+def pid_callback(data):
+    location: dict = json.loads(data.data)
+    pid_controller.state_update(location)
+    lin_vel, ang_vel = pid_controller.correction_action()
+    msg = Twist(linear=lin_vel, angular=ang_vel)
+    pub.publish(msg)
+
 def test_main():
     bot = TurtlebotPID(3, -math.pi/3, 0.25, math.pi/6)
 
@@ -118,6 +131,11 @@ def test_main():
         fig.savefig(f"Tbot_test_PID.png")
     else:
         plt.show()
+    exit()
 
 if __name__ == '__main__':
-    test_main()
+    if False: test_main()
+    rospy.init_node('pid_follower')
+    pid_controller = TurtlebotPID(1.5, 0, 0.25, math.pi/6)
+    pub = Publisher('/cmd_vel', Twist, queue_size=2)
+    sub = Subscriber('/object_location', String, pid_callback)

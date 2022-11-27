@@ -120,5 +120,5 @@ if __name__ == '__main__':
     arm_frame_str = args.arm_frame
 
     rospy.init_node('ipython')
-    s = rospy.Service('arm_adjustment', ArmAdjustment, adjust_base_for_arm)
+    s = rospy.Service('/arm_adjustment_navigation', ArmAdjustment, adjust_base_for_arm)
     rospy.spin()

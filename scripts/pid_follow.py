@@ -1,6 +1,5 @@
 
 import os
-import sys
 import time
 import matplotlib.pyplot as plt
 from simple_pid import PID

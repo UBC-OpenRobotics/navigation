@@ -8,9 +8,7 @@ import numpy as np
 
 v_lin = 0
 v_th = 0
-x = 0
-y = 0
-th = 0
+
 
 def vel_cb(msg:Twist):
     global v_lin, v_th
@@ -30,13 +28,17 @@ def odom_publisher():
 
     r = rospy.Rate(1)
 
+    x = 0
+    y = 0
+    th = 0
+
     while not rospy.is_shutdown():
         t_current = rospy.Time.now()
         dt = t_current.to_sec() - t_last.to_sec()
 
         dx = v_lin * np.cos(th) * dt
         dy = v_lin * np.sin(th) * dt
-        dth = v_th & dt
+        dth = v_th * dt
 
         x = x + dx
         y = y + dy

@@ -1,0 +1,12 @@
+[submodule "sensor_pkgs/depthimage_to_laserscan"]
+	path = sensor_pkgs/depthimage_to_laserscan
+	url = https://github.com/ros-perception/depthimage_to_laserscan.git
+[submodule "sensor_pkgs/realsense_gazebo_plugin"]
+	path = sensor_pkgs/realsense_gazebo_plugin
+	url = https://github.com/issaiass/realsense_gazebo_plugin
+[submodule "sensor_pkgs/realsense2_description"]
+	path = sensor_pkgs/realsense2_description
+	url = https://github.com/issaiass/realsense2_description
+[submodule "turtlebot3_simulations"]
+	path = turtlebot3_simulations
+	url = https://github.com/ROBOTIS-GIT/turtlebot3_simulations/tree/noetic-devel

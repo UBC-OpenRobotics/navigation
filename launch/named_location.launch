@@ -1,6 +1,0 @@
-<launch>
-  <!-- named_locations navigtion server -->
-  <node pkg="navigation" name="named_location" type="scripts/named_location.py">
-    <param name="named_locations_file" value="$(find navigation)/maps/locations.pickle" />
-  </node>
-</launch>

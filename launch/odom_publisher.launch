@@ -1,4 +1,0 @@
-<launch>
-  <node pkg="navigation" name="odom_publisher" type="scripts/odom_publisher.py">
-  </node>
-</launch>

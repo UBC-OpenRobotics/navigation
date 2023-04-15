@@ -1,0 +1,57 @@
+<launch>
+  <!-- args -->
+  <arg name="model" default="ob1"/>
+  <arg name="multi_robot_name" default=""/>
+  <arg name="cmd_vel_topic" default="/cmd_vel" />
+  <arg name="odom_topic" default="odom" />
+  <arg name="move_forward_only" default="false"/>
+
+  <!-- urdf -->
+  <arg name="urdf_file" default="$(find xacro)/xacro --inorder '$(find ob1_base_description)/urdf/ob1_base.urdf.xacro'" />
+  <param name="robot_description" command="$(arg urdf_file)" />
+
+  <!-- state publishers -->
+  <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher">
+    <param name="publish_frequency" type="double" value="50.0" />
+    <param name="tf_prefix" value="$(arg multi_robot_name)"/>
+  </node>
+
+  <node pkg="joint_state_publisher" type="joint_state_publisher" name="joint_state_publisher">
+    <param name="use_gui" value="true"/>
+    <param name="rate" value="50"/>
+  </node>
+
+  <!-- move_base -->
+  <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+    <param name="base_local_planner" value="dwa_local_planner/DWAPlannerROS" />
+    <rosparam file="$(find navigation)/param/costmap_common_params_$(arg model).yaml" command="load" ns="global_costmap" />
+    <rosparam file="$(find navigation)/param/costmap_common_params_$(arg model).yaml" command="load" ns="local_costmap" />
+    <rosparam file="$(find navigation)/param/local_costmap_params.yaml" command="load" />
+    <rosparam file="$(find navigation)/param/global_costmap_params.yaml" command="load" />
+    <rosparam file="$(find navigation)/param/move_base_params.yaml" command="load" />
+    <rosparam file="$(find navigation)/param/dwa_local_planner_params_$(arg model).yaml" command="load" />
+    <remap from="cmd_vel" to="$(arg cmd_vel_topic)"/>
+    <remap from="odom" to="$(arg odom_topic)"/>
+    <param name="DWAPlannerROS/min_vel_x" value="0.0" if="$(arg move_forward_only)" />
+  </node>
+
+  <!-- Depth Image to Laser Scan Node -->
+  <node name="ob1_d435_depthimage_to_laserscan" pkg="depthimage_to_laserscan" type="depthimage_to_laserscan" args="">
+
+    <remap from="image"       to="/camera/depth/image_raw"/> <!-- change here for your camera depth topic name. Default: "/camera/depth/image_raw" -->
+
+    <remap from="camera_info" to="/camera/depth/camera_info"/> 
+    <!-- the remap for camera_info by default uses the same path as the one given to the image topic. Default: "<path_to_image_topic>/camera_info>" -->
+
+    <!-- PARAMETERS: -->
+    <!-- These are the default values. --> 
+    <param name="scan_height"     type="int"    value="1"/> <!-- default: 1 pixel. Number of pixel rows used to generate laser scan. -->
+    <param name="scan_time"       type="double" value="0.033"/> <!-- default:0.033, 30 FPS . Time between scans. -->
+    <param name="range_min"       type="double" value="0.45"/> <!--default:0.45m. Ranges less than this are considered -Inf. -->
+    <param name="range_max"       type="double" value="10.0"/> <!--default: 10m. Ranges less than this are considered +Inf. -->
+    <param name="output_frame_id" type="str"    value="camera_depth_frame"/> <!--default: camera_depth_frame. Frame id of the laser scan. -->
+  </node>
+
+  <!-- RVIZ -->
+  <node name="rviz_ob1_base" pkg="rviz" type="rviz" args="-d $(find turtlebot3_description)/rviz/model.rviz"/>
+</launch>

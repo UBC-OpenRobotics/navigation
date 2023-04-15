@@ -1,0 +1,14 @@
+<launch>
+  <!-- Arguments -->
+  <arg name="slam_methods" default="gmapping" doc="slam type [gmapping, cartographer, hector, karto, frontier_exploration]"/>
+  <arg name="move_forward_only" default="false"/>
+
+  <!-- bringup and gazebo spawn -->
+  <include file="$(find navigation)/launch/ob1_gazebo_house.launch"/>
+
+  <!-- SLAM: Gmapping, Cartographer, Hector, Karto, Frontier_exploration, RTAB-Map -->
+  <include file="$(find navigation)/launch/$(arg slam_methods).launch"></include>
+
+  <!-- rviz -->
+  <node pkg="rviz" type="rviz" name="rviz_slam" required="true" args="-d $(find navigation)/rviz/$(arg slam_methods).rviz"/>
+</launch>

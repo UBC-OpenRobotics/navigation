@@ -7,7 +7,9 @@
   <arg name="move_forward_only" default="false"/>
 
   <!-- urdf -->
-  <arg name="urdf_file" default="$(find xacro)/xacro --inorder '$(find ob1_base_description)/urdf/ob1_base.urdf.xacro'" />
+  <!-- <arg name="urdf_file" default="$(find xacro)/xacro \-\-inorder '$(find ob1_base_description)/urdf/ob1_base.urdf.xacro'" />
+  <param name="robot_description" command="$(arg urdf_file)" /> -->
+  <arg name="urdf_file" default="$(find xacro)/xacro \-\-inorder '$(find ob1_base_description)/urdf/drivetrain.urdf.xacro'" />
   <param name="robot_description" command="$(arg urdf_file)" />
 
   <!-- state publishers -->

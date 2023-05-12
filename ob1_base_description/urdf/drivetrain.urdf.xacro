@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<robot name="drivetrain" xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <xacro:include filename="$(find ob1_base_description)/urdf/drivetrain_specs/drivetrain_specs.urdf"/>
+
+  <link name="base_footprint"/>
+
+  <joint name="base_joint" type="fixed">
+    <parent link="base_footprint"/>
+    <child link="base_link"/>
+    <origin xyz="0.0 0.0 0.010" rpy="0 0 0"/>
+  </joint>
+</robot>

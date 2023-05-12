@@ -2161,4 +2161,476 @@
             </geometry>
         </collision>
         <visual>
-            <origin xyz="-0.171162462629919
+            <origin xyz="-0.17116246262991904881 -0.16600549881313628187 0.61294595524271400233" rpy="-1.4164485678847738415e-15 6.0090134883413453581e-15 -5.7144181737427558984e-15" />
+            <geometry>
+                <mesh filename="package:///drivetrain_specs/1ft_30_mm_t-slotted_framing_5537t902_3.stl"/>
+            </geometry>
+            <material name="1ft_30_mm_t-slotted_framing_5537t902_3_material">
+                <color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.17116246262991904881 -0.16600549881313628187 0.61294595524271400233" rpy="-1.4164485678847738415e-15 6.0090134883413453581e-15 -5.7144181737427558984e-15" />
+            <geometry>
+                <mesh filename="package:///drivetrain_specs/1ft_30_mm_t-slotted_framing_5537t902_3.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.17116246262989576188 -0.16600549881314557998 0.64794595524273879139" rpy="-9.5896991605358627212e-15 -7.2366012135189602215e-14 -5.7144181737426699126e-15" />
+            <geometry>
+                <mesh filename="package:///drivetrain_specs/pipe_mount.stl"/>
+            </geometry>
+            <material name="pipe_mount_material">
+                <color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.17116246262989576188 -0.16600549881314557998 0.64794595524273879139" rpy="-9.5896991605358627212e-15 -7.2366012135189602215e-14 -5.7144181737426699126e-15" />
+            <geometry>
+                <mesh filename="package:///drivetrain_specs/pipe_mount.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.17116246262991904881 -0.16600549881313628187 0.61294595524271400233" rpy="-1.4164485678847738415e-15 6.0090134883413453581e-15 -5.7144181737427558984e-15" />
+            <geometry>
+                <mesh filename="package:///drivetrain_specs/5537t864_t-slotted_framing_5.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_5_material">
+                <color rgba="0.76862745098039220171 0.88627450980392152857 0.95294117647058818044 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.17116246262991904881 -0.16600549881313628187 0.61294595524271400233" rpy="-1.4164485678847738415e-15 6.0090134883413453581e-15 -5.7144181737427558984e-15" />
+            <geometry>
+                <mesh filename="package:///drivetrain_specs/5537t864_t-slotted_framing_5.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.17116246262991904881 -0.16600549881313628187 0.61294595524271400233" rpy="-1.4164485678847738415e-15 6.0090134883413453581e-15 -5.7144181737427558984e-15" />
+            <geometry>
+                <mesh filename="package:///drivetrain_specs/5537t864_t-slotted_framing_6.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_6_material">
+                <color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.17116246262991904881 -0.16600549881313628187 0.61294595524271400233" rpy="-1.4164485678847738415e-15 6.0090134883413453581e-15 -5.7144181737427558984e-15" />
+            <geometry>
+                <mesh filename="package:///drivetrain_specs/5537t864_t-slotted_framing_6.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.17116246262991904881 -0.16600549881313628187 0.61294595524271400233" rpy="-1.4164485678847738415e-15 6.0090134883413453581e-15 -5.7144181737427558984e-15" />
+            <geometry>
+                <mesh filename="package:///drivetrain_specs/m6x1x18_-_91290a323_3.stl"/>
+            </geometry>
+            <material name="m6x1x18_-_91290a323_3_material">
+                <color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.17116246262991904881 -0.16600549881313628187 0.61294595524271400233" rpy="-1.4164485678847738415e-15 6.0090134883413453581e-15 -5.7144181737427558984e-15" />
+            <geometry>
+                <mesh filename="package:///drivetrain_specs/m6x1x18_-_91290a323_3.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.22861110271548876205 -0.22345543881321711099 0.3347999999999999865" rpy="1.570796326794896558 1.1564823173178719715e-16 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package:///drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_material">
+                <color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.22861110271548876205 -0.22345543881321711099 0.3347999999999999865" rpy="1.570796326794896558 1.1564823173178719715e-16 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package:///drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.1711624626299229901 -0.16600549881314330403 0.61294595524267525555" rpy="1.1564823173377520059e-16 2.0812519207880445288e-16 -5.7144181737427566873e-15" />
+            <geometry>
+                <mesh filename="package:///drivetrain_specs/lift_platform.stl"/>
+            </geometry>
+            <material name="lift_platform_material">
+                <color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.1711624626299229901 -0.16600549881314330403 0.61294595524267525555" rpy="1.1564823173377520059e-16 2.0812519207880445288e-16 -5.7144181737427566873e-15" />
+            <geometry>
+                <mesh filename="package:///drivetrain_specs/lift_platform.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.16048014598486690097 0.13214456086187187367 -0.060433751154980112907" rpy="-0 1.570796326794896558 0" />
+            <geometry>
+                <mesh filename="package:///drivetrain_specs/part_1.stl"/>
+            </geometry>
+            <material name="part_1_material">
+                <color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.16048014598486690097 0.13214456086187187367 -0.060433751154980112907" rpy="-0 1.570796326794896558 0" />
+            <geometry>
+                <mesh filename="package:///drivetrain_specs/part_1.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.17116246262991904881 -0.16600549881313628187 0.61294595524271400233" rpy="-1.4164485678847738415e-15 6.0090134883413453581e-15 -5.7144181737427558984e-15" />
+            <geometry>
+                <mesh filename="package:///drivetrain_specs/m6x1x18_-_91290a323_6.stl"/>
+            </geometry>
+            <material name="m6x1x18_-_91290a323_6_material">
+                <color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.17116246262991904881 -0.16600549881313628187 0.61294595524271400233" rpy="-1.4164485678847738415e-15 6.0090134883413453581e-15 -5.7144181737427558984e-15" />
+            <geometry>
+                <mesh filename="package:///drivetrain_specs/m6x1x18_-_91290a323_6.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.24358889728451124657 0.0051445611867828866526 0.34980000000000005533" rpy="2.312964634635743943e-16 -0 0" />
+            <geometry>
+                <mesh filename="package:///drivetrain_specs/5537t015_1.5_ft_x_30mm_extrusion.stl"/>
+            </geometry>
+            <material name="5537t015_1.5_ft_x_30mm_extrusion_material">
+                <color rgba="0.75294117647058822484 0.75294117647058822484 0.75294117647058822484 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.24358889728451124657 0.0051445611867828866526 0.34980000000000005533" rpy="2.312964634635743943e-16 -0 0" />
+            <geometry>
+                <mesh filename="package:///drivetrain_specs/5537t015_1.5_ft_x_30mm_extrusion.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.035564852715488849688 0.13214456151169415299 -0.060433751154980112907" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="package:///drivetrain_specs/nmrv30-gxx-d11.stl"/>
+            </geometry>
+            <material name="nmrv30-gxx-d11_material">
+                <color rgba="1 1 1 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.035564852715488849688 0.13214456151169415299 -0.060433751154980112907" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="package:///drivetrain_specs/nmrv30-gxx-d11.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-1.2462629915403840007e-05 0.0051445011868418381168 0.36480000047208144265" rpy="1.1564823173178719715e-16 2.0812519207880147e-16 -5.7144181737427606316e-15" />
+            <geometry>
+                <mesh filename="package:///drivetrain_specs/part_1.stl"/>
+            </geometry>
+            <material name="part_1_material">
+                <color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-1.2462629915403840007e-05 0.0051445011868418381168 0.36480000047208144265" rpy="1.1564823173178719715e-16 2.0812519207880147e-16 -5.7144181737427606316e-15" />
+            <geometry>
+                <mesh filename="package:///drivetrain_specs/part_1.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.17116246262991904881 -0.16600549881313628187 0.61294595524271400233" rpy="-1.4164485678847738415e-15 6.0090134883413453581e-15 -5.7144181737427558984e-15" />
+            <geometry>
+                <mesh filename="package:///drivetrain_specs/5537t864_t-slotted_framing_7.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_7_material">
+                <color rgba="0.2313725490196078538 0.38039215686274507888 0.7058823529411765163 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.17116246262991904881 -0.16600549881313628187 0.61294595524271400233" rpy="-1.4164485678847738415e-15 6.0090134883413453581e-15 -5.7144181737427558984e-15" />
+            <geometry>
+                <mesh filename="package:///drivetrain_specs/5537t864_t-slotted_framing_7.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.17116246262991904881 -0.16600549881313628187 0.61294595524271400233" rpy="-1.4164485678847738415e-15 6.0090134883413453581e-15 -5.7144181737427558984e-15" />
+            <geometry>
+                <mesh filename="package:///drivetrain_specs/5537t864_t-slotted_framing_2.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_2_material">
+                <color rgba="0.49803921568627451677 0.49803921568627451677 0.49803921568627451677 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.17116246262991904881 -0.16600549881313628187 0.61294595524271400233" rpy="-1.4164485678847738415e-15 6.0090134883413453581e-15 -5.7144181737427558984e-15" />
+            <geometry>
+                <mesh filename="package:///drivetrain_specs/5537t864_t-slotted_framing_2.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.035012462629914996304 0.075144501186842030394 0.37115000047208140943" rpy="-2.0812519207880161791e-16 1.156482317317871725e-16 -1.5707963267949023312" />
+            <geometry>
+                <mesh filename="package:///drivetrain_specs/right_-_stepper_motor_housing.stl"/>
+            </geometry>
+            <material name="right_-_stepper_motor_housing_material">
+                <color rgba="0.54117647058823525885 0.68235294117647060652 0.83921568627450982003 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.035012462629914996304 0.075144501186842030394 0.37115000047208140943" rpy="-2.0812519207880161791e-16 1.156482317317871725e-16 -1.5707963267949023312" />
+            <geometry>
+                <mesh filename="package:///drivetrain_specs/right_-_stepper_motor_housing.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.22858889728451139978 0.2337445611867828843 0.33480000000000004201" rpy="1.57079632679489678 -0 1.570796326794896558" />
+            <geometry>
+                <mesh filename="package:///drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_material">
+                <color rgba="0.76862745098039220171 0.88627450980392152857 0.95294117647058818044 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.22858889728451139978 0.2337445611867828843 0.33480000000000004201" rpy="1.57079632679489678 -0 1.570796326794896558" />
+            <geometry>
+                <mesh filename="package:///drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.0019040243811629109505 0.080521059003509268259 4.336808689942017736e-18" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="package:///drivetrain_specs/part_2.stl"/>
+            </geometry>
+            <material name="part_2_material">
+                <color rgba="0.64705882352941179736 0.64705882352941179736 0.64705882352941179736 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.0019040243811629109505 0.080521059003509268259 4.336808689942017736e-18" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="package:///drivetrain_specs/part_2.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.18241246262991642202 -0.1772554988131568865 1.2362959552427126297" rpy="-1.039264255171272424e-15 -3.5273451636330191256e-16 -5.7144181737427487987e-15" />
+            <geometry>
+                <mesh filename="package:///drivetrain_specs/intermediate_plate.stl"/>
+            </geometry>
+            <material name="intermediate_plate_material">
+                <color rgba="0.64705882352941179736 0.64705882352941179736 0.64705882352941179736 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.18241246262991642202 -0.1772554988131568865 1.2362959552427126297" rpy="-1.039264255171272424e-15 -3.5273451636330191256e-16 -5.7144181737427487987e-15" />
+            <geometry>
+                <mesh filename="package:///drivetrain_specs/intermediate_plate.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.22858889728451139978 0.2337445611867828843 0.33480000000000004201" rpy="1.57079632679489678 -0 1.570796326794896558" />
+            <geometry>
+                <mesh filename="package:///drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_material">
+                <color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.22858889728451139978 0.2337445611867828843 0.33480000000000004201" rpy="1.57079632679489678 -0 1.570796326794896558" />
+            <geometry>
+                <mesh filename="package:///drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.17116246262991904881 -0.16600549881313628187 0.61294595524271400233" rpy="-1.4164485678847738415e-15 6.0090134883413453581e-15 -5.7144181737427558984e-15" />
+            <geometry>
+                <mesh filename="package:///drivetrain_specs/5537t864_t-slotted_framing_1.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_1_material">
+                <color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.17116246262991904881 -0.16600549881313628187 0.61294595524271400233" rpy="-1.4164485678847738415e-15 6.0090134883413453581e-15 -5.7144181737427558984e-15" />
+            <geometry>
+                <mesh filename="package:///drivetrain_specs/5537t864_t-slotted_framing_1.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.17113753737006651146 0.17629450118682798987 0.61294595524267636577" rpy="-8.550434905363952306e-15 -7.2013277618826200807e-14 3.1415926535897873428" />
+            <geometry>
+                <mesh filename="package:///drivetrain_specs/flange_nut.stl"/>
+            </geometry>
+            <material name="flange_nut_material">
+                <color rgba="0.75294117647058822484 0.75294117647058822484 0.75294117647058822484 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.17113753737006651146 0.17629450118682798987 0.61294595524267636577" rpy="-8.550434905363952306e-15 -7.2013277618826200807e-14 3.1415926535897873428" />
+            <geometry>
+                <mesh filename="package:///drivetrain_specs/flange_nut.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.27151328325271606445 0.49743825197219848633 0.19451302289962768555" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="package:///drivetrain_specs/part_1.stl"/>
+            </geometry>
+            <material name="part_1_material">
+                <color rgba="0.75294117647058822484 0.75294117647058822484 0.75294117647058822484 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.27151328325271606445 0.49743825197219848633 0.19451302289962768555" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="package:///drivetrain_specs/part_1.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.17116246262991904881 -0.16600549881313628187 0.61294595524271400233" rpy="-1.4164485678847738415e-15 6.0090134883413453581e-15 -5.7144181737427558984e-15" />
+            <geometry>
+                <mesh filename="package:///drivetrain_specs/1ft_30_mm_t-slotted_framing_5537t902.stl"/>
+            </geometry>
+            <material name="1ft_30_mm_t-slotted_framing_5537t902_material">
+                <color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.17116246262991904881 -0.16600549881313628187 0.61294595524271400233" rpy="-1.4164485678847738415e-15 6.0090134883413453581e-15 -5.7144181737427558984e-15" />
+            <geometry>
+                <mesh filename="package:///drivetrain_specs/1ft_30_mm_t-slotted_framing_5537t902.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.17116246262991904881 -0.16600549881313628187 0.61294595524271400233" rpy="-1.4164485678847738415e-15 6.0090134883413453581e-15 -5.7144181737427558984e-15" />
+            <geometry>
+                <mesh filename="package:///drivetrain_specs/5537t864_t-slotted_framing_4.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_4_material">
+                <color rgba="0.98039215686274505668 0.71372549019607844922 0.0039215686274509803377 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.17116246262991904881 -0.16600549881313628187 0.61294595524271400233" rpy="-1.4164485678847738415e-15 6.0090134883413453581e-15 -5.7144181737427558984e-15" />
+            <geometry>
+                <mesh filename="package:///drivetrain_specs/5537t864_t-slotted_framing_4.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.17116246262991904881 -0.16600549881313628187 0.61294595524271400233" rpy="-1.4164485678847738415e-15 6.0090134883413453581e-15 -5.7144181737427558984e-15" />
+            <geometry>
+                <mesh filename="package:///drivetrain_specs/5537t864_t-slotted_framing_3.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_3_material">
+                <color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.17116246262991904881 -0.16600549881313628187 0.61294595524271400233" rpy="-1.4164485678847738415e-15 6.0090134883413453581e-15 -5.7144181737427558984e-15" />
+            <geometry>
+                <mesh filename="package:///drivetrain_specs/5537t864_t-slotted_framing_3.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.17116246262989429083 -0.16600549881314377587 0.71845033730171292685" rpy="-9.7098059863028619961e-15 -7.2389927574358431381e-14 -5.7144181737426738569e-15" />
+            <geometry>
+                <mesh filename="package:///drivetrain_specs/shaft_support_-_1870k2_1.stl"/>
+            </geometry>
+            <material name="shaft_support_-_1870k2_1_material">
+                <color rgba="0.30196078431372547213 0.30196078431372547213 0.30196078431372547213 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.17116246262989429083 -0.16600549881314377587 0.71845033730171292685" rpy="-9.7098059863028619961e-15 -7.2389927574358431381e-14 -5.7144181737426738569e-15" />
+            <geometry>
+                <mesh filename="package:///drivetrain_specs/shaft_support_-_1870k2_1.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.2435888972845114131 0.24874456118678309191 0.18240000000000003433" rpy="1.570796326794896558 1.1564823173178719715e-16 0" />
+            <geometry>
+                <mesh filename="package:///drivetrain_specs/5537t736.stl"/>
+            </geometry>
+            <material name="5537t736_material">
+                <color rgba="0.75294117647058822484 0.75294117647058822484 0.75294117647058822484 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2435888972845114131 0.24874456118678309191 0.18240000000000003433" rpy="1.570796326794896558 1.1564823173178719715e-16 0" />
+            <geometry>
+                <mesh filename="package:///drivetrain_specs/5537t736.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.17116246262991904881 -0.16600549881313628187 0.61294595524271400233" rpy="-1.4164485678847738415e-15 6.0090134883413453581e-15 -5.7144181737427558984e-15" />
+            <geometry>
+                <mesh filename="package:///drivetrain_specs/5537t864_t-slotted_framing_2.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_2_material">
+                <color rgba="0.97254901960784312376 0.52941176470588235947 0.0039215686274509803377 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.17116246262991904881 -0.16600549881313628187 0.61294595524271400233" rpy="-1.4164485678847738415e-15 6.0090134883413453581e-15 -5.7144181737427558984e-15" />
+            <geometry>
+                <mesh filename="package:///drivetrain_specs/5537t864_t-slotted_framing_2.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.17116246262991904881 -0.16600549881313628187 0.61294595524271400233" rpy="-1.4164485678847738415e-15 6.0090134883413453581e-15 -5.7144181737427558984e-15" />
+            <geometry>
+                <mesh filename="package:///drivetrain_specs/5537t864_t-slotted_framing_4.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_4_material">
+                <color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.17116246262991904881 -0.16600549881313628187 0.61294595524271400233" rpy="-1.4164485678847738415e-15 6.0090134883413453581e-15 -5.7144181737427558984e-15" />
+            <geometry>
+                <mesh filename="package:///drivetrain_specs/5537t864_t-slotted_framing_4.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.17116246262991904881 -0.16600549881313628187 0.61294595524271400233" rpy="-1.4164485678847738415e-15 6.0090134883413453581e-15 -5.7144181737427558984e-15" />
+            <geometry>
+                <mesh filename="package:///drivetrain_specs/5537t864_t-slotted_framing_7.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_7_material">
+                <color rgba="0.98039215686274505668 0.71372549019607844922 0.0039215686274509803377 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.17116246262991904881 -0.16600549881313628187 0.61294595524271400233" rpy="-1.4164485678847738415e-15 6.0090134883413453581e-15 -5.7144181737427558984e-15" />
+            <geometry>
+                <mesh filename="package:///drivetrain_specs/5537t864_t-slotted_framing_7.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.034580145984866923758 0.16234456086187187829 -0.011933751154980107995" rpy="1.570796326794896558 -0 3.141592653589793116" />
+            <geometry>
+                <mesh filename="package:///drivetrain_specs/part_1.stl"/>
+            </geometry>
+            <material name="part_1_material">
+                <color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.034580145984866923758 0.16234456086187187829 -0.011933751154980107995" rpy="1.570796326794896558 -0 3.141592653589793116" />
+            <geometry>
+                <mesh filename="package:///drivetrain_specs/part_1.stl"/>
+            </geometry>
+        </collision>
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="0" />
+            <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
+        </inertial>
+    </link>
+
+
+</robot>

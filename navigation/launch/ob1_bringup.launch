@@ -54,6 +54,8 @@
     <param name="output_frame_id" type="str"    value="camera_depth_frame"/> <!--default: camera_depth_frame. Frame id of the laser scan. -->
   </node>
 
+  <node name="ob1_odometry_publisher" pkg="navigation" type="odom_publisher.py"></node>
+
   <!-- RVIZ -->
   <node name="rviz_ob1_base" pkg="rviz" type="rviz" args="-d $(find turtlebot3_description)/rviz/model.rviz"/>
 </launch>

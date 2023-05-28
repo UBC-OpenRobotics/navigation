@@ -1,6 +1,6 @@
 {
-    "documentId": "e4dc975fd62033abea5a921e",
+    "documentId": "6c147bf0f6372d99dd193b3a",
     "outputFormat": "urdf",
-    "assemblyName": "Assembly 1",
-    "robotName": "drivetrain"
+    "assemblyName": "Drivetrain_Assembly",
+    "robotName": "drivetrain_specs"
 }

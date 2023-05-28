@@ -1132,7 +1132,7 @@
         </inertial>
     </link>
 
-    <link name="wheel_link">
+    <link name="wheel_left_link">
         <visual>
             <origin xyz="0.0066038823243843580713 0.0051658155559266630275 -0.004746750853033276929" rpy="-3.141592653589793116 1.6421466378806452481e-47 -1.6814911928475730754e-63" />
             <geometry>
@@ -1158,13 +1158,13 @@
     <joint name="left_wheel_joint_and_base_joint" type="continuous">
         <origin xyz="-0.28096485271548882201 0.13214456151169415299 -0.060433751154980112907" rpy="1.57079632679489678 -0 1.570796326794896558" />
         <parent link="base_link" />
-        <child link="wheel_link" />
+        <child link="wheel_left_link" />
         <axis xyz="0 0 1"/>
         <limit effort="1" velocity="20" />
         <joint_properties friction="0.0"/>
     </joint>
 
-    <link name="wheel_link_2">
+    <link name="wheel_right_link">
         <visual>
             <origin xyz="0.0066038823243843580713 0.0051658155559266630275 -0.004746750853033276929" rpy="-3.141592653589793116 3.3614661194406929604e-62 -4.6919413917442713849e-106" />
             <geometry>
@@ -1190,7 +1190,7 @@
     <joint name="right_wheel_and_base_joint" type="continuous">
         <origin xyz="0.28048014598486692428 0.1321445608618717904 -0.060433751154980119846" rpy="-1.570796326794896558 -0 1.570796326794896558" />
         <parent link="base_link" />
-        <child link="wheel_link_2" />
+        <child link="wheel_right_link" />
         <axis xyz="0 0 1"/>
         <limit effort="1" velocity="20" />
         <joint_properties friction="0.0"/>

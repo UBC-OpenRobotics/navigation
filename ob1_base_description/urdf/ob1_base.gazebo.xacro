@@ -52,8 +52,8 @@
       <publishWheelJointState>true</publishWheelJointState>
       <legacyMode>false</legacyMode>
       <updateRate>30</updateRate>
-      <leftJoint>wheel_left_joint</leftJoint>
-      <rightJoint>wheel_right_joint</rightJoint>
+      <leftJoint>left_wheel_joint_and_base_joint</leftJoint>
+      <rightJoint>right_wheel_joint_and_base_joint</rightJoint>
       <wheelSeparation>0.287</wheelSeparation>
       <wheelDiameter>0.066</wheelDiameter>
       <wheelAcceleration>1</wheelAcceleration>

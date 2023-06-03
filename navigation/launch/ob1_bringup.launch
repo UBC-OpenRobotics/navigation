@@ -7,7 +7,7 @@
   <arg name="move_forward_only" default="false"/>
 
   <!-- urdf -->
-  <arg name="urdf_file" default="$(find xacro)/xacro --inorder '$(find ob1_base_description)/urdf/ob1_base.urdf.xacro'" />
+  <arg name="urdf_file" default="$(find xacro)/xacro \-\-inorder '$(find ob1_base_description)/urdf/drivetrain.urdf.xacro'" />
   <param name="robot_description" command="$(arg urdf_file)" />
 
   <!-- state publishers -->
@@ -23,9 +23,6 @@
 
   <!-- launch camera driver -->
   <include file="$(find realsense2_camera)/launch/rs_camera.launch"/>
-
-  <!-- Launch gmapping -->
-  <include file="$(find navigation)/launch/gmapping.launch"/>
 
   <!-- move_base -->
   <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
@@ -58,6 +55,8 @@
     <param name="output_frame_id" type="str"    value="camera_depth_frame"/> <!--default: camera_depth_frame. Frame id of the laser scan. -->
   </node>
 
+  <node name="ob1_odometry_publisher" pkg="navigation" type="odom_publisher.py"></node>
+  
   <!-- Launch the rosserial_python node -->
   <node name="rosserial_node" pkg="rosserial_python" type="serial_node.py">
     <param name="port" value="/dev/ttyUSB0"/> <!-- Replace with the correct serial port -->

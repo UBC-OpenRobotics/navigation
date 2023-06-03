@@ -1,0 +1,2509 @@
+<robot name="drivetrain_specs">
+    <link name="base_link">
+        <visual>
+            <origin xyz="-0.22861110271548876205 -0.22345543881321711099 0.3347999999999999865" rpy="1.570796326794896558 1.1564823173178719715e-16 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_material">
+                <color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.22861110271548876205 -0.22345543881321711099 0.3347999999999999865" rpy="1.570796326794896558 1.1564823173178719715e-16 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.22858889728451131651 0.23374456118678291205 0.030000000000000033584" rpy="-0 1.570796326794896558 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_material">
+                <color rgba="0.76862745098039220171 0.88627450980392152857 0.95294117647058818044 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.22858889728451131651 0.23374456118678291205 0.030000000000000033584" rpy="-0 1.570796326794896558 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.22861110271548876205 -0.22345543881321711099 0.3347999999999999865" rpy="1.570796326794896558 1.1564823173178719715e-16 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_material">
+                <color rgba="0.2313725490196078538 0.38039215686274507888 0.7058823529411765163 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.22861110271548876205 -0.22345543881321711099 0.3347999999999999865" rpy="1.570796326794896558 1.1564823173178719715e-16 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-1.1102715488761384237e-05 0.0051445611867830106853 -0.0063499999999999962724" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/base_plate.stl"/>
+            </geometry>
+            <material name="base_plate_material">
+                <color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-1.1102715488761384237e-05 0.0051445611867830106853 -0.0063499999999999962724" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/base_plate.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-1.1102715488761384237e-05 -0.23845543881321706881 0.015000000000000008119" rpy="1.570796326794896558 1.5707963267948961139 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t015_1.5_ft_x_30mm_extrusion.stl"/>
+            </geometry>
+            <material name="5537t015_1.5_ft_x_30mm_extrusion_material">
+                <color rgba="0.75294117647058822484 0.75294117647058822484 0.75294117647058822484 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-1.1102715488761384237e-05 -0.23845543881321706881 0.015000000000000008119" rpy="1.570796326794896558 1.5707963267948961139 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t015_1.5_ft_x_30mm_extrusion.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.14876485271548883782 0.13214456151169415299 -0.060433751154980112907" rpy="1.570796326794896558 -0 1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/2393k33_9200_rpm_split_spider_for_2-7_64__od_set_screw_flexible_shaft_coupling_hub.stl"/>
+            </geometry>
+            <material name="2393k33_9200_rpm_split_spider_for_2-7_64__od_set_screw_flexible_shaft_coupling_hub_material">
+                <color rgba="0.97254901960784312376 0.52941176470588235947 0.0039215686274509803377 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.14876485271548883782 0.13214456151169415299 -0.060433751154980112907" rpy="1.570796326794896558 -0 1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/2393k33_9200_rpm_split_spider_for_2-7_64__od_set_screw_flexible_shaft_coupling_hub.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-1.1102715488764403062e-05 -0.12185543881321703186 -0.010159999999999995424" rpy="0 -0 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/part_1.stl"/>
+            </geometry>
+            <material name="part_1_material">
+                <color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-1.1102715488764403062e-05 -0.12185543881321703186 -0.010159999999999995424" rpy="0 -0 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/part_1.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.13167700271548885005 0.13214456151169415299 -0.060433751154980112907" rpy="0 -0 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/6413k145_set_screw_flexible_shaft_coupling_iron_hub.stl"/>
+            </geometry>
+            <material name="6413k145_set_screw_flexible_shaft_coupling_iron_hub_material">
+                <color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.13167700271548885005 0.13214456151169415299 -0.060433751154980112907" rpy="0 -0 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/6413k145_set_screw_flexible_shaft_coupling_iron_hub.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.24358889728451124657 0.0051445611867828866526 0.34980000000000005533" rpy="2.312964634635743943e-16 -0 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t015_1.5_ft_x_30mm_extrusion.stl"/>
+            </geometry>
+            <material name="5537t015_1.5_ft_x_30mm_extrusion_material">
+                <color rgba="0.75294117647058822484 0.75294117647058822484 0.75294117647058822484 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.24358889728451124657 0.0051445611867828866526 0.34980000000000005533" rpy="2.312964634635743943e-16 -0 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t015_1.5_ft_x_30mm_extrusion.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.22861110271548870654 0.23374456118678293981 0.33480000000000004201" rpy="1.57079632679489678 -0 3.141592653589793116" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_material">
+                <color rgba="0.97254901960784312376 0.52941176470588235947 0.0039215686274509803377 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.22861110271548870654 0.23374456118678293981 0.33480000000000004201" rpy="1.57079632679489678 -0 3.141592653589793116" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.22861110271548870654 0.23374456118678293981 0.33480000000000004201" rpy="1.57079632679489678 -0 3.141592653589793116" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_material">
+                <color rgba="0.76862745098039220171 0.88627450980392152857 0.95294117647058818044 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.22861110271548870654 0.23374456118678293981 0.33480000000000004201" rpy="1.57079632679489678 -0 3.141592653589793116" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.22861110271548867878 0.23374456118678291205 0.030000000000000033584" rpy="-1.570796326794896558 1.570796326794896558 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_material">
+                <color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.22861110271548867878 0.23374456118678291205 0.030000000000000033584" rpy="-1.570796326794896558 1.570796326794896558 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.22858889728451123324 -0.22345543881321708324 0.030000000000000009298" rpy="1.570796326794896558 1.570796326794896558 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_material">
+                <color rgba="0.2313725490196078538 0.38039215686274507888 0.7058823529411765163 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.22858889728451123324 -0.22345543881321708324 0.030000000000000009298" rpy="1.570796326794896558 1.570796326794896558 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-1.2462629915388490076e-05 0.0051445011868419265877 0.13740333047208144746" rpy="1.1564823173178719715e-16 2.0812519207880161791e-16 -5.7144181737427606316e-15" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/pc_sheet.stl"/>
+            </geometry>
+            <material name="pc_sheet_material">
+                <color rgba="0.90196078431372550543 0.90196078431372550543 0.90196078431372550543 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-1.2462629915388490076e-05 0.0051445011868419265877 0.13740333047208144746" rpy="1.1564823173178719715e-16 2.0812519207880161791e-16 -5.7144181737427606316e-15" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/pc_sheet.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-1.1102715488597869609e-05 0.24874456118678289762 0.34980000000000005533" rpy="1.570796326794896558 -1.570796326794896558 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t015_1.5_ft_x_30mm_extrusion.stl"/>
+            </geometry>
+            <material name="5537t015_1.5_ft_x_30mm_extrusion_material">
+                <color rgba="0.75294117647058822484 0.75294117647058822484 0.75294117647058822484 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-1.1102715488597869609e-05 0.24874456118678289762 0.34980000000000005533" rpy="1.570796326794896558 -1.570796326794896558 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t015_1.5_ft_x_30mm_extrusion.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.26876485271548883338 0.13214456151169415299 -0.060433751154980112907" rpy="-3.141592653589793116 -1.659973295034564809e-16 3.141592653589793116" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/217-2590-001_rev6.stl"/>
+            </geometry>
+            <material name="217-2590-001_rev6_material">
+                <color rgba="0.2313725490196078538 0.38039215686274507888 0.7058823529411765163 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.26876485271548883338 0.13214456151169415299 -0.060433751154980112907" rpy="-3.141592653589793116 -1.659973295034564809e-16 3.141592653589793116" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/217-2590-001_rev6.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.22858889728451139978 0.2337445611867828843 0.33480000000000004201" rpy="1.57079632679489678 -0 1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_material">
+                <color rgba="0.76862745098039220171 0.88627450980392152857 0.95294117647058818044 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.22858889728451139978 0.2337445611867828843 0.33480000000000004201" rpy="1.57079632679489678 -0 1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.22858889728451123324 -0.22345543881321708324 0.030000000000000009298" rpy="1.570796326794896558 1.570796326794896558 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_material">
+                <color rgba="0.76862745098039220171 0.88627450980392152857 0.95294117647058818044 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.22858889728451123324 -0.22345543881321708324 0.030000000000000009298" rpy="1.570796326794896558 1.570796326794896558 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-1.1102715488764403062e-05 -0.23845543881321715207 0.34979999999999999982" rpy="-3.141592653589793116 2.312964634635743943e-16 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t015_1.5_ft_x_30mm_extrusion.stl"/>
+            </geometry>
+            <material name="5537t015_1.5_ft_x_30mm_extrusion_material">
+                <color rgba="0.75294117647058822484 0.75294117647058822484 0.75294117647058822484 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-1.1102715488764403062e-05 -0.23845543881321715207 0.34979999999999999982" rpy="-3.141592653589793116 2.312964634635743943e-16 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t015_1.5_ft_x_30mm_extrusion.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.2677801459848669352 0.13214456086187187367 -0.060433751154980112907" rpy="0 1.659973295034564809e-16 5.3214053208856293424e-17" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/217-2590-001_rev6.stl"/>
+            </geometry>
+            <material name="217-2590-001_rev6_material">
+                <color rgba="0.2313725490196078538 0.38039215686274507888 0.7058823529411765163 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2677801459848669352 0.13214456086187187367 -0.060433751154980112907" rpy="0 1.659973295034564809e-16 5.3214053208856293424e-17" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/217-2590-001_rev6.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.22858889728451131651 0.23374456118678291205 0.030000000000000033584" rpy="-0 1.570796326794896558 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_material">
+                <color rgba="0.2313725490196078538 0.38039215686274507888 0.7058823529411765163 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.22858889728451131651 0.23374456118678291205 0.030000000000000033584" rpy="-0 1.570796326794896558 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.035564852715488849688 0.13214456151169415299 -0.060433751154980112907" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/nmrv30-gxx-d11.stl"/>
+            </geometry>
+            <material name="nmrv30-gxx-d11_material">
+                <color rgba="1 1 1 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.035564852715488849688 0.13214456151169415299 -0.060433751154980112907" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/nmrv30-gxx-d11.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.16486799598486689966 0.13214456086187187367 -0.060433751154980112907" rpy="1.570796326794896558 -0 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/6408k714_flexible_shaft_coupling_iron_hub.stl"/>
+            </geometry>
+            <material name="6408k714_flexible_shaft_coupling_iron_hub_material">
+                <color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.16486799598486689966 0.13214456086187187367 -0.060433751154980112907" rpy="1.570796326794896558 -0 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/6408k714_flexible_shaft_coupling_iron_hub.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-1.1102715488681136335e-05 0.24874456118678289762 0.015000000000000035874" rpy="3.141592653589793116 -0 1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t015_1.5_ft_x_30mm_extrusion.stl"/>
+            </geometry>
+            <material name="5537t015_1.5_ft_x_30mm_extrusion_material">
+                <color rgba="0.75294117647058822484 0.75294117647058822484 0.75294117647058822484 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-1.1102715488681136335e-05 0.24874456118678289762 0.015000000000000035874" rpy="3.141592653589793116 -0 1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t015_1.5_ft_x_30mm_extrusion.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.22861110271548870654 0.23374456118678293981 0.33480000000000004201" rpy="1.57079632679489678 -0 3.141592653589793116" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_material">
+                <color rgba="0.2313725490196078538 0.38039215686274507888 0.7058823529411765163 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.22861110271548870654 0.23374456118678293981 0.33480000000000004201" rpy="1.57079632679489678 -0 3.141592653589793116" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.22858889728451131651 0.23374456118678291205 0.030000000000000033584" rpy="-0 1.570796326794896558 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_material">
+                <color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.22858889728451131651 0.23374456118678291205 0.030000000000000033584" rpy="-0 1.570796326794896558 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.22858889728451139978 0.2337445611867828843 0.33480000000000004201" rpy="1.57079632679489678 -0 1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_material">
+                <color rgba="0.2313725490196078538 0.38039215686274507888 0.7058823529411765163 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.22858889728451139978 0.2337445611867828843 0.33480000000000004201" rpy="1.57079632679489678 -0 1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.24361110271548863659 0.24874456118678311967 0.18240000000000003433" rpy="1.570796326794896558 -0 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t736.stl"/>
+            </geometry>
+            <material name="5537t736_material">
+                <color rgba="0.75294117647058822484 0.75294117647058822484 0.75294117647058822484 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.24361110271548863659 0.24874456118678311967 0.18240000000000003433" rpy="1.570796326794896558 -0 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t736.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.22861110271548876205 -0.22345543881321708324 0.030000000000000009298" rpy="3.141592653589793116 1.1564823173178719715e-16 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_material">
+                <color rgba="0.2313725490196078538 0.38039215686274507888 0.7058823529411765163 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.22861110271548876205 -0.22345543881321708324 0.030000000000000009298" rpy="3.141592653589793116 1.1564823173178719715e-16 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.22858889728451123324 -0.22345543881321708324 0.030000000000000009298" rpy="1.570796326794896558 1.570796326794896558 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_material">
+                <color rgba="0.97254901960784312376 0.52941176470588235947 0.0039215686274509803377 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.22858889728451123324 -0.22345543881321708324 0.030000000000000009298" rpy="1.570796326794896558 1.570796326794896558 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.13606485271548884874 0.13214456151169415299 -0.060433751154980112907" rpy="-0 1.570796326794896558 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/part_1.stl"/>
+            </geometry>
+            <material name="part_1_material">
+                <color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.13606485271548884874 0.13214456151169415299 -0.060433751154980112907" rpy="-0 1.570796326794896558 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/part_1.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.22858889728451139978 0.2337445611867828843 0.33480000000000004201" rpy="1.57079632679489678 -0 1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_material">
+                <color rgba="0.97254901960784312376 0.52941176470588235947 0.0039215686274509803377 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.22858889728451139978 0.2337445611867828843 0.33480000000000004201" rpy="1.57079632679489678 -0 1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.093521102715488843571 0.089282061511694141287 -0.015983751154980116449" rpy="3.141592653589793116 -0 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/91251a634_black-oxide_alloy_steel_socket_head_screw.stl"/>
+            </geometry>
+            <material name="91251a634_black-oxide_alloy_steel_socket_head_screw_material">
+                <color rgba="0.64705882352941179736 0.64705882352941179736 0.64705882352941179736 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.093521102715488843571 0.089282061511694141287 -0.015983751154980116449" rpy="3.141592653589793116 -0 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/91251a634_black-oxide_alloy_steel_socket_head_screw.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.035564852715488849688 0.16234456151169415761 -0.0059337511549801113392" rpy="3.141592653589793116 -0 -1.1102230246251562939e-16" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/23he30-5004d-e1000.stl"/>
+            </geometry>
+            <material name="23he30-5004d-e1000_material">
+                <color rgba="0.25098039215686274161 0.25098039215686274161 0.25098039215686274161 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.035564852715488849688 0.16234456151169415761 -0.0059337511549801113392" rpy="3.141592653589793116 -0 -1.1102230246251562939e-16" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/23he30-5004d-e1000.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.16048014598486690097 0.13214456086187187367 -0.060433751154980112907" rpy="-0 1.570796326794896558 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/shaft.stl"/>
+            </geometry>
+            <material name="shaft_material">
+                <color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.16048014598486690097 0.13214456086187187367 -0.060433751154980112907" rpy="-0 1.570796326794896558 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/shaft.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.22861110271548867878 0.23374456118678291205 0.030000000000000033584" rpy="-1.570796326794896558 1.570796326794896558 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_material">
+                <color rgba="0.2313725490196078538 0.38039215686274507888 0.7058823529411765163 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.22861110271548867878 0.23374456118678291205 0.030000000000000033584" rpy="-1.570796326794896558 1.570796326794896558 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.22861110271548876205 -0.22345543881321711099 0.3347999999999999865" rpy="1.570796326794896558 1.1564823173178719715e-16 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_material">
+                <color rgba="0.97254901960784312376 0.52941176470588235947 0.0039215686274509803377 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.22861110271548876205 -0.22345543881321711099 0.3347999999999999865" rpy="1.570796326794896558 1.1564823173178719715e-16 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.14778014598486691189 0.13214456086187187367 -0.060433751154980112907" rpy="1.570796326794896558 -0 1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/2393k33_9200_rpm_split_spider_for_2-7_64__od_set_screw_flexible_shaft_coupling_hub.stl"/>
+            </geometry>
+            <material name="2393k33_9200_rpm_split_spider_for_2-7_64__od_set_screw_flexible_shaft_coupling_hub_material">
+                <color rgba="0.97254901960784312376 0.52941176470588235947 0.0039215686274509803377 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.14778014598486691189 0.13214456086187187367 -0.060433751154980112907" rpy="1.570796326794896558 -0 1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/2393k33_9200_rpm_split_spider_for_2-7_64__od_set_screw_flexible_shaft_coupling_hub.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.092536395984866917641 0.13214456086187187367 -0.060433751154980112907" rpy="-1.570796326794896558 -0 1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/7728t51_mounted_steel_ball_bearing_with_cast_iron_housing.stl"/>
+            </geometry>
+            <material name="7728t51_mounted_steel_ball_bearing_with_cast_iron_housing_material">
+                <color rgba="0.2313725490196078538 0.38039215686274507888 0.7058823529411765163 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.092536395984866917641 0.13214456086187187367 -0.060433751154980112907" rpy="-1.570796326794896558 -0 1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/7728t51_mounted_steel_ball_bearing_with_cast_iron_housing.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.22858889728451123324 -0.22345543881321711099 0.3347999999999999865" rpy="1.57079632679489678 -0 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_material">
+                <color rgba="0.97254901960784312376 0.52941176470588235947 0.0039215686274509803377 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.22858889728451123324 -0.22345543881321711099 0.3347999999999999865" rpy="1.57079632679489678 -0 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.13508014598486692281 0.13214456086187187367 -0.060433751154980112907" rpy="-0 -1.570796326794896558 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/part_1.stl"/>
+            </geometry>
+            <material name="part_1_material">
+                <color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.13508014598486692281 0.13214456086187187367 -0.060433751154980112907" rpy="-0 -1.570796326794896558 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/part_1.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.24358889728451130208 -0.23845543881321690227 0.18240000000000000657" rpy="1.57079632679489678 -0 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t736.stl"/>
+            </geometry>
+            <material name="5537t736_material">
+                <color rgba="0.75294117647058822484 0.75294117647058822484 0.75294117647058822484 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.24358889728451130208 -0.23845543881321690227 0.18240000000000000657" rpy="1.57079632679489678 -0 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t736.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.22858889728451123324 -0.22345543881321708324 0.030000000000000009298" rpy="1.570796326794896558 1.570796326794896558 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_material">
+                <color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.22858889728451123324 -0.22345543881321708324 0.030000000000000009298" rpy="1.570796326794896558 1.570796326794896558 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.24361110271548871986 -0.23845543881321690227 0.18240000000000000657" rpy="1.57079632679489678 -0 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t736.stl"/>
+            </geometry>
+            <material name="5537t736_material">
+                <color rgba="0.75294117647058822484 0.75294117647058822484 0.75294117647058822484 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.24361110271548871986 -0.23845543881321690227 0.18240000000000000657" rpy="1.57079632679489678 -0 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t736.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.034580145984866923758 0.13214456086187187367 -0.060433751154980112907" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/nmrv30-gxx-d11.stl"/>
+            </geometry>
+            <material name="nmrv30-gxx-d11_material">
+                <color rgba="1 1 1 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.034580145984866923758 0.13214456086187187367 -0.060433751154980112907" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/nmrv30-gxx-d11.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.22861110271548867878 0.23374456118678291205 0.030000000000000033584" rpy="-1.570796326794896558 1.570796326794896558 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_material">
+                <color rgba="0.76862745098039220171 0.88627450980392152857 0.95294117647058818044 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.22861110271548867878 0.23374456118678291205 0.030000000000000033584" rpy="-1.570796326794896558 1.570796326794896558 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.24361110271548880313 0.0051445611867828866526 0.34979999999999999982" rpy="1.1564823173178719715e-16 -1.3374513502689151249e-32 1.1564823173178719715e-16" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t015_1.5_ft_x_30mm_extrusion.stl"/>
+            </geometry>
+            <material name="5537t015_1.5_ft_x_30mm_extrusion_material">
+                <color rgba="0.75294117647058822484 0.75294117647058822484 0.75294117647058822484 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.24361110271548880313 0.0051445611867828866526 0.34979999999999999982" rpy="1.1564823173178719715e-16 -1.3374513502689151249e-32 1.1564823173178719715e-16" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t015_1.5_ft_x_30mm_extrusion.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.093521102715488843571 0.13214456151169415299 -0.060433751154980112907" rpy="-1.570796326794896558 -0 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/7728t51_mounted_steel_ball_bearing_with_cast_iron_housing.stl"/>
+            </geometry>
+            <material name="7728t51_mounted_steel_ball_bearing_with_cast_iron_housing_material">
+                <color rgba="0.2313725490196078538 0.38039215686274507888 0.7058823529411765163 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.093521102715488843571 0.13214456151169415299 -0.060433751154980112907" rpy="-1.570796326794896558 -0 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/7728t51_mounted_steel_ball_bearing_with_cast_iron_housing.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.22861110271548876205 -0.22345543881321711099 0.3347999999999999865" rpy="1.570796326794896558 1.1564823173178719715e-16 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_material">
+                <color rgba="0.76862745098039220171 0.88627450980392152857 0.95294117647058818044 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.22861110271548876205 -0.22345543881321711099 0.3347999999999999865" rpy="1.570796326794896558 1.1564823173178719715e-16 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.20302389598486689226 0.13214456086187187367 -0.060433751154980112907" rpy="-1.570796326794896558 -0 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/7728t51_mounted_steel_ball_bearing_with_cast_iron_housing.stl"/>
+            </geometry>
+            <material name="7728t51_mounted_steel_ball_bearing_with_cast_iron_housing_material">
+                <color rgba="0.2313725490196078538 0.38039215686274507888 0.7058823529411765163 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.20302389598486689226 0.13214456086187187367 -0.060433751154980112907" rpy="-1.570796326794896558 -0 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/7728t51_mounted_steel_ball_bearing_with_cast_iron_housing.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.0019040243811629109505 0.080521059003509268259 4.336808689942017736e-18" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/part_2.stl"/>
+            </geometry>
+            <material name="part_2_material">
+                <color rgba="0.64705882352941179736 0.64705882352941179736 0.64705882352941179736 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.0019040243811629109505 0.080521059003509268259 4.336808689942017736e-18" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/part_2.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.24361110271548869211 0.0051445611867829144082 0.015000000000000035874" rpy="3.141592653589793116 -0 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t015_1.5_ft_x_30mm_extrusion.stl"/>
+            </geometry>
+            <material name="5537t015_1.5_ft_x_30mm_extrusion_material">
+                <color rgba="0.75294117647058822484 0.75294117647058822484 0.75294117647058822484 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.24361110271548869211 0.0051445611867829144082 0.015000000000000035874" rpy="3.141592653589793116 -0 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t015_1.5_ft_x_30mm_extrusion.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.22861110271548876205 -0.22345543881321708324 0.030000000000000009298" rpy="3.141592653589793116 1.1564823173178719715e-16 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_material">
+                <color rgba="0.76862745098039220171 0.88627450980392152857 0.95294117647058818044 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.22861110271548876205 -0.22345543881321708324 0.030000000000000009298" rpy="3.141592653589793116 1.1564823173178719715e-16 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.22861110271548876205 -0.22345543881321708324 0.030000000000000009298" rpy="3.141592653589793116 1.1564823173178719715e-16 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_material">
+                <color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.22861110271548876205 -0.22345543881321708324 0.030000000000000009298" rpy="3.141592653589793116 1.1564823173178719715e-16 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.22858889728451131651 0.23374456118678291205 0.030000000000000033584" rpy="-0 1.570796326794896558 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_material">
+                <color rgba="0.97254901960784312376 0.52941176470588235947 0.0039215686274509803377 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.22858889728451131651 0.23374456118678291205 0.030000000000000033584" rpy="-0 1.570796326794896558 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.22858889728451139978 0.2337445611867828843 0.33480000000000004201" rpy="1.57079632679489678 -0 1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_material">
+                <color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.22858889728451139978 0.2337445611867828843 0.33480000000000004201" rpy="1.57079632679489678 -0 1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.16585270271548882559 0.13214456151169415299 -0.060433751154980112907" rpy="1.570796326794896558 -0 1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/6408k714_flexible_shaft_coupling_iron_hub.stl"/>
+            </geometry>
+            <material name="6408k714_flexible_shaft_coupling_iron_hub_material">
+                <color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.16585270271548882559 0.13214456151169415299 -0.060433751154980112907" rpy="1.570796326794896558 -0 1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/6408k714_flexible_shaft_coupling_iron_hub.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.22861110271548867878 0.23374456118678291205 0.030000000000000033584" rpy="-1.570796326794896558 1.570796326794896558 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_material">
+                <color rgba="0.97254901960784312376 0.52941176470588235947 0.0039215686274509803377 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.22861110271548867878 0.23374456118678291205 0.030000000000000033584" rpy="-1.570796326794896558 1.570796326794896558 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.28146485271548882245 0.13214456151169415299 -0.060433751154980112907" rpy="-0 1.570796326794896558 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/shaft.stl"/>
+            </geometry>
+            <material name="shaft_material">
+                <color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.28146485271548882245 0.13214456151169415299 -0.060433751154980112907" rpy="-0 1.570796326794896558 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/shaft.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.22861110271548870654 0.23374456118678293981 0.33480000000000004201" rpy="1.57079632679489678 -0 3.141592653589793116" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_material">
+                <color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.22861110271548870654 0.23374456118678293981 0.33480000000000004201" rpy="1.57079632679489678 -0 3.141592653589793116" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.24283892328448769549 0.0051445011868430368107 0.1224000000000000643" rpy="2.312964634635743943e-16 1.3615504576932116705e-30 -5.7144181737427606316e-15" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t015_1.5_ft_x_30mm_extrusion.stl"/>
+            </geometry>
+            <material name="5537t015_1.5_ft_x_30mm_extrusion_material">
+                <color rgba="0.75294117647058822484 0.75294117647058822484 0.75294117647058822484 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.24283892328448769549 0.0051445011868430368107 0.1224000000000000643" rpy="2.312964634635743943e-16 1.3615504576932116705e-30 -5.7144181737427606316e-15" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t015_1.5_ft_x_30mm_extrusion.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.24358889728451132983 0.0051445611867829144082 0.015000000000000035874" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t015_1.5_ft_x_30mm_extrusion.stl"/>
+            </geometry>
+            <material name="5537t015_1.5_ft_x_30mm_extrusion_material">
+                <color rgba="0.75294117647058822484 0.75294117647058822484 0.75294117647058822484 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.24358889728451132983 0.0051445611867829144082 0.015000000000000035874" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t015_1.5_ft_x_30mm_extrusion.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.20400860271548884595 0.13214456151169415299 -0.060441393632867809749" rpy="-1.570796326794896558 -0 1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/7728t51_mounted_steel_ball_bearing_with_cast_iron_housing.stl"/>
+            </geometry>
+            <material name="7728t51_mounted_steel_ball_bearing_with_cast_iron_housing_material">
+                <color rgba="0.2313725490196078538 0.38039215686274507888 0.7058823529411765163 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.20400860271548884595 0.13214456151169415299 -0.060441393632867809749" rpy="-1.570796326794896558 -0 1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/7728t51_mounted_steel_ball_bearing_with_cast_iron_housing.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.13069229598486692412 0.13214456086187187367 -0.060433751154980112907" rpy="0 -0 1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/6413k145_set_screw_flexible_shaft_coupling_iron_hub.stl"/>
+            </geometry>
+            <material name="6413k145_set_screw_flexible_shaft_coupling_iron_hub_material">
+                <color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.13069229598486692412 0.13214456086187187367 -0.060433751154980112907" rpy="0 -0 1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/6413k145_set_screw_flexible_shaft_coupling_iron_hub.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.22858889728451123324 -0.22345543881321711099 0.3347999999999999865" rpy="1.57079632679489678 -0 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_material">
+                <color rgba="0.76862745098039220171 0.88627450980392152857 0.95294117647058818044 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.22858889728451123324 -0.22345543881321711099 0.3347999999999999865" rpy="1.57079632679489678 -0 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.22858889728451123324 -0.22345543881321711099 0.3347999999999999865" rpy="1.57079632679489678 -0 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_material">
+                <color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.22858889728451123324 -0.22345543881321711099 0.3347999999999999865" rpy="1.57079632679489678 -0 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.034580145984866923758 0.16234456086187187829 -0.011933751154980107995" rpy="1.570796326794896558 -0 3.141592653589793116" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/part_1.stl"/>
+            </geometry>
+            <material name="part_1_material">
+                <color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.034580145984866923758 0.16234456086187187829 -0.011933751154980107995" rpy="1.570796326794896558 -0 3.141592653589793116" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/part_1.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.22861110271548876205 -0.22345543881321708324 0.030000000000000009298" rpy="3.141592653589793116 1.1564823173178719715e-16 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_material">
+                <color rgba="0.97254901960784312376 0.52941176470588235947 0.0039215686274509803377 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.22861110271548876205 -0.22345543881321708324 0.030000000000000009298" rpy="3.141592653589793116 1.1564823173178719715e-16 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.2435888972845114131 0.24874456118678309191 0.18240000000000003433" rpy="1.570796326794896558 1.1564823173178719715e-16 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t736.stl"/>
+            </geometry>
+            <material name="5537t736_material">
+                <color rgba="0.75294117647058822484 0.75294117647058822484 0.75294117647058822484 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2435888972845114131 0.24874456118678309191 0.18240000000000003433" rpy="1.570796326794896558 1.1564823173178719715e-16 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t736.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-1.2462629915403840007e-05 0.0051445011868418381168 0.36480000047208144265" rpy="1.1564823173178719715e-16 2.0812519207880147e-16 -5.7144181737427606316e-15" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/part_1.stl"/>
+            </geometry>
+            <material name="part_1_material">
+                <color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-1.2462629915403840007e-05 0.0051445011868418381168 0.36480000047208144265" rpy="1.1564823173178719715e-16 2.0812519207880147e-16 -5.7144181737427606316e-15" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/part_1.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.0009193176505409433874 0.080521059653331575334 4.336808689942017736e-18" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/part_1.stl"/>
+            </geometry>
+            <material name="part_1_material">
+                <color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.0009193176505409433874 0.080521059653331575334 4.336808689942017736e-18" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/part_1.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.034580145984866923758 0.16234456086187187829 -0.0059337511549801078697" rpy="3.141592653589793116 -0 -1.1102230246251562939e-16" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/23he30-5004d-e1000.stl"/>
+            </geometry>
+            <material name="23he30-5004d-e1000_material">
+                <color rgba="0.25098039215686274161 0.25098039215686274161 0.25098039215686274161 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.034580145984866923758 0.16234456086187187829 -0.0059337511549801078697" rpy="3.141592653589793116 -0 -1.1102230246251562939e-16" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/23he30-5004d-e1000.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.035564852715488849688 0.16234456151169415761 -0.011933751154980111464" rpy="1.570796326794896558 -0 3.141592653589793116" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/part_1.stl"/>
+            </geometry>
+            <material name="part_1_material">
+                <color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.035564852715488849688 0.16234456151169415761 -0.011933751154980111464" rpy="1.570796326794896558 -0 3.141592653589793116" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/part_1.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.22858889728451123324 -0.22345543881321711099 0.3347999999999999865" rpy="1.57079632679489678 -0 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_material">
+                <color rgba="0.2313725490196078538 0.38039215686274507888 0.7058823529411765163 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.22858889728451123324 -0.22345543881321711099 0.3347999999999999865" rpy="1.57079632679489678 -0 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.2443624626299155389 0.0051445011868431200774 0.12240333047208147577" rpy="1.1564823173178719715e-16 6.3147142227029259743e-31 -5.7144181737427606316e-15" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t015_1.5_ft_x_30mm_extrusion.stl"/>
+            </geometry>
+            <material name="5537t015_1.5_ft_x_30mm_extrusion_material">
+                <color rgba="0.75294117647058822484 0.75294117647058822484 0.75294117647058822484 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.2443624626299155389 0.0051445011868431200774 0.12240333047208147577" rpy="1.1564823173178719715e-16 6.3147142227029259743e-31 -5.7144181737427606316e-15" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t015_1.5_ft_x_30mm_extrusion.stl"/>
+            </geometry>
+        </collision>
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="0" />
+            <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
+        </inertial>
+    </link>
+
+    <link name="wheel_left_link">
+        <visual>
+            <origin xyz="0.0066038823243843580713 0.0051658155559266630275 -0.004746750853033276929" rpy="-3.141592653589793116 1.6421466378806452481e-47 -1.6814911928475730754e-63" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/wheel_link.stl"/>
+            </geometry>
+            <material name="wheel_link_material">
+                <color rgba="0.76862745098039220171 0.88627450980392152857 0.95294117647058818044 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.0066038823243843580713 0.0051658155559266630275 -0.004746750853033276929" rpy="-3.141592653589793116 1.6421466378806452481e-47 -1.6814911928475730754e-63" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/wheel_link.stl"/>
+            </geometry>
+        </collision>
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="0" />
+            <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
+        </inertial>
+    </link>
+
+    <joint name="left_wheel_and_base_joint" type="continuous">
+        <origin xyz="-0.28096485271548882201 0.13214456151169415299 -0.060433751154980112907" rpy="1.57079632679489678 -0 1.570796326794896558" />
+        <parent link="base_link" />
+        <child link="wheel_left_link" />
+        <axis xyz="0 0 1"/>
+        <limit effort="1" velocity="20" />
+        <joint_properties friction="0.0"/>
+    </joint>
+
+    <link name="wheel_right_link">
+        <visual>
+            <origin xyz="0.0066038823243843580713 0.0051658155559266630275 -0.004746750853033276929" rpy="-3.141592653589793116 3.3614661194406929604e-62 -4.6919413917442713849e-106" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/wheel_link.stl"/>
+            </geometry>
+            <material name="wheel_link_material">
+                <color rgba="0.76862745098039220171 0.88627450980392152857 0.95294117647058818044 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.0066038823243843580713 0.0051658155559266630275 -0.004746750853033276929" rpy="-3.141592653589793116 3.3614661194406929604e-62 -4.6919413917442713849e-106" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/wheel_link.stl"/>
+            </geometry>
+        </collision>
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="0" />
+            <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
+        </inertial>
+    </link>
+
+    <joint name="right_wheel_and_base_joint" type="continuous">
+        <origin xyz="0.28048014598486692428 0.1321445608618717904 -0.060433751154980119846" rpy="-1.570796326794896558 -0 1.570796326794896558" />
+        <parent link="base_link" />
+        <child link="wheel_right_link" />
+        <axis xyz="0 0 1"/>
+        <limit effort="1" velocity="20" />
+        <joint_properties friction="0.0"/>
+    </joint>
+
+    <link name="torso_link">
+        <visual>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/panel_retainers_3.stl"/>
+            </geometry>
+            <material name="panel_retainers_3_material">
+                <color rgba="0.54117647058823525885 0.68235294117647060652 0.83921568627450982003 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/panel_retainers_3.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing_3.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_3_material">
+                <color rgba="0.76862745098039220171 0.88627450980392152857 0.95294117647058818044 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing_3.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing_4.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_4_material">
+                <color rgba="0.64705882352941179736 0.64705882352941179736 0.64705882352941179736 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing_4.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing_6.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_6_material">
+                <color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing_6.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/m6_locknut_nylon_insert_-_90576a115_1.stl"/>
+            </geometry>
+            <material name="m6_locknut_nylon_insert_-_90576a115_1_material">
+                <color rgba="0.76862745098039220171 0.88627450980392152857 0.95294117647058818044 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/m6_locknut_nylon_insert_-_90576a115_1.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/1ft_30_mm_t-slotted_framing_5537t902_1.stl"/>
+            </geometry>
+            <material name="1ft_30_mm_t-slotted_framing_5537t902_1_material">
+                <color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/1ft_30_mm_t-slotted_framing_5537t902_1.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing_1.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_1_material">
+                <color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing_1.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/1ft_30_mm_t-slotted_framing_5537t902_7.stl"/>
+            </geometry>
+            <material name="1ft_30_mm_t-slotted_framing_5537t902_7_material">
+                <color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/1ft_30_mm_t-slotted_framing_5537t902_7.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing_2.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_2_material">
+                <color rgba="0.98039215686274505668 0.71372549019607844922 0.0039215686274509803377 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing_2.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing_3.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_3_material">
+                <color rgba="0.2313725490196078538 0.38039215686274507888 0.7058823529411765163 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing_3.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing_6.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_6_material">
+                <color rgba="0.2313725490196078538 0.38039215686274507888 0.7058823529411765163 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing_6.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_material">
+                <color rgba="0.2313725490196078538 0.38039215686274507888 0.7058823529411765163 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing_6.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_6_material">
+                <color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing_6.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing_1.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_1_material">
+                <color rgba="0.2313725490196078538 0.38039215686274507888 0.7058823529411765163 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing_1.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/m6x1x18_-_91290a323_4.stl"/>
+            </geometry>
+            <material name="m6x1x18_-_91290a323_4_material">
+                <color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/m6x1x18_-_91290a323_4.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing_5.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_5_material">
+                <color rgba="0.2313725490196078538 0.38039215686274507888 0.7058823529411765163 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing_5.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.11114999999998716185 -0.17114999999998081748 -0.23855592507665263069" rpy="3.1415926535897846783 7.1805152426747396355e-14 1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/flange_nut.stl"/>
+            </geometry>
+            <material name="flange_nut_material">
+                <color rgba="0.75294117647058822484 0.75294117647058822484 0.75294117647058822484 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.11114999999998716185 -0.17114999999998081748 -0.23855592507665263069" rpy="3.1415926535897846783 7.1805152426747396355e-14 1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/flange_nut.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing_3.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_3_material">
+                <color rgba="0.97254901960784312376 0.52941176470588235947 0.0039215686274509803377 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing_3.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/m6x1x18_-_91290a323_1.stl"/>
+            </geometry>
+            <material name="m6x1x18_-_91290a323_1_material">
+                <color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/m6x1x18_-_91290a323_1.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/1ft_30_mm_t-slotted_framing_5537t902_3.stl"/>
+            </geometry>
+            <material name="1ft_30_mm_t-slotted_framing_5537t902_3_material">
+                <color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/1ft_30_mm_t-slotted_framing_5537t902_3.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.23314999999997904068 0.1711500000000011068 -0.20175592507670642162" rpy="3.1415926535897917837 -5.8592881631900147953e-15 -1.5707963267949025532" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/surface_bracket_30mm_t-slotted_framing_5537t972_2.stl"/>
+            </geometry>
+            <material name="surface_bracket_30mm_t-slotted_framing_5537t972_2_material">
+                <color rgba="0.64705882352941179736 0.64705882352941179736 0.64705882352941179736 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.23314999999997904068 0.1711500000000011068 -0.20175592507670642162" rpy="3.1415926535897917837 -5.8592881631900147953e-15 -1.5707963267949025532" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/surface_bracket_30mm_t-slotted_framing_5537t972_2.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing_2.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_2_material">
+                <color rgba="0.97254901960784312376 0.52941176470588235947 0.0039215686274509803377 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing_2.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing_5.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_5_material">
+                <color rgba="0.76862745098039220171 0.88627450980392152857 0.95294117647058818044 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing_5.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing_5.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_5_material">
+                <color rgba="0.64705882352941179736 0.64705882352941179736 0.64705882352941179736 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing_5.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/1ft_30_mm_t-slotted_framing_5537t902_6.stl"/>
+            </geometry>
+            <material name="1ft_30_mm_t-slotted_framing_5537t902_6_material">
+                <color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/1ft_30_mm_t-slotted_framing_5537t902_6.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing_1.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_1_material">
+                <color rgba="0.64705882352941179736 0.64705882352941179736 0.64705882352941179736 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing_1.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing_7.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_7_material">
+                <color rgba="0.2313725490196078538 0.38039215686274507888 0.7058823529411765163 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing_7.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/m6_locknut_nylon_insert_-_90576a115.stl"/>
+            </geometry>
+            <material name="m6_locknut_nylon_insert_-_90576a115_material">
+                <color rgba="0.76862745098039220171 0.88627450980392152857 0.95294117647058818044 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/m6_locknut_nylon_insert_-_90576a115.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.23314999999998159419 0.17114999999999852554 -0.2017559250766874368" rpy="3.1415926535897917837 -3.7167164853679468309e-15 -1.5707963267949072161" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/surface_bracket_30mm_t-slotted_framing_5537t972_3.stl"/>
+            </geometry>
+            <material name="surface_bracket_30mm_t-slotted_framing_5537t972_3_material">
+                <color rgba="0.64705882352941179736 0.64705882352941179736 0.64705882352941179736 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.23314999999998159419 0.17114999999999852554 -0.2017559250766874368" rpy="3.1415926535897917837 -3.7167164853679468309e-15 -1.5707963267949072161" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/surface_bracket_30mm_t-slotted_framing_5537t972_3.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing_7.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_7_material">
+                <color rgba="0.98039215686274505668 0.71372549019607844922 0.0039215686274509803377 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing_7.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing_6.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_6_material">
+                <color rgba="0.64705882352941179736 0.64705882352941179736 0.64705882352941179736 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing_6.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.24238747698709117717 0.18199136663583903584 -0.86190592507668872813" rpy="3.1415926535897922278 5.6085970844210350582e-16 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/intermediate_plate.stl"/>
+            </geometry>
+            <material name="intermediate_plate_material">
+                <color rgba="0.64705882352941179736 0.64705882352941179736 0.64705882352941179736 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.24238747698709117717 0.18199136663583903584 -0.86190592507668872813" rpy="3.1415926535897922278 5.6085970844210350582e-16 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/intermediate_plate.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.11030948261838817437 0.17118960588855466898 -0.12529399999996326809" rpy="3.1415926535897846783 7.2013277618826200807e-14 -2.4649272999703194744e-32" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/composite_part_1.stl"/>
+            </geometry>
+            <material name="composite_part_1_material">
+                <color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.11030948261838817437 0.17118960588855466898 -0.12529399999996326809" rpy="3.1415926535897846783 7.2013277618826200807e-14 -2.4649272999703194744e-32" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/composite_part_1.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.23113747698707987066 0.17074136663581832019 -0.27355592507671494529" rpy="3.141592653589783346 7.2574137327268406668e-14 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/pipe_mount.stl"/>
+            </geometry>
+            <material name="pipe_mount_material">
+                <color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.23113747698707987066 0.17074136663581832019 -0.27355592507671494529" rpy="3.141592653589783346 7.2574137327268406668e-14 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/pipe_mount.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/panel_retainers_1.stl"/>
+            </geometry>
+            <material name="panel_retainers_1_material">
+                <color rgba="0.54117647058823525885 0.68235294117647060652 0.83921568627450982003 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/panel_retainers_1.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing_4.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_4_material">
+                <color rgba="0.2313725490196078538 0.38039215686274507888 0.7058823529411765163 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing_4.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/m6x1x18_-_91290a323_7.stl"/>
+            </geometry>
+            <material name="m6x1x18_-_91290a323_7_material">
+                <color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/m6x1x18_-_91290a323_7.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.009999999999999995004 0.034999999999999982514 0" rpy="3.141592653589793116 -0 -2.4069310442751969997e-32" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/torso_block.stl"/>
+            </geometry>
+            <material name="torso_block_material">
+                <color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.009999999999999995004 0.034999999999999982514 0" rpy="3.141592653589793116 -0 -2.4069310442751969997e-32" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/torso_block.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_material">
+                <color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/m6_locknut_-_90576a115.stl"/>
+            </geometry>
+            <material name="m6_locknut_-_90576a115_material">
+                <color rgba="0.64705882352941179736 0.64705882352941179736 0.64705882352941179736 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/m6_locknut_-_90576a115.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.032412523012908783793 0.21199136663583900697 -0.86190592507668828404" rpy="3.1415926535897922278 5.6085970844210350582e-16 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/part_3.stl"/>
+            </geometry>
+            <material name="part_3_material">
+                <color rgba="0.2313725490196078538 0.38039215686274507888 0.7058823529411765163 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.032412523012908783793 0.21199136663583900697 -0.86190592507668828404" rpy="3.1415926535897922278 5.6085970844210350582e-16 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/part_3.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_material">
+                <color rgba="0.64705882352941179736 0.64705882352941179736 0.64705882352941179736 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/1ft_30_mm_t-slotted_framing_5537t902_9.stl"/>
+            </geometry>
+            <material name="1ft_30_mm_t-slotted_framing_5537t902_9_material">
+                <color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/1ft_30_mm_t-slotted_framing_5537t902_9.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.23114999999998731006 0.17114999999997956848 -0.47845000000002618767" rpy="3.1415926535897846783 7.2013277618826301782e-14 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/48925k95_standard-wall_unthreaded_rigid_pvc_pipe_for_water.stl"/>
+            </geometry>
+            <material name="48925k95_standard-wall_unthreaded_rigid_pvc_pipe_for_water_material">
+                <color rgba="0.30196078431372547213 0.30196078431372547213 0.30196078431372547213 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.23114999999998731006 0.17114999999997956848 -0.47845000000002618767" rpy="3.1415926535897846783 7.2013277618826301782e-14 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/48925k95_standard-wall_unthreaded_rigid_pvc_pipe_for_water.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/m6_locknut_-_90576a115_3.stl"/>
+            </geometry>
+            <material name="m6_locknut_-_90576a115_3_material">
+                <color rgba="0.64705882352941179736 0.64705882352941179736 0.64705882352941179736 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/m6_locknut_-_90576a115_3.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing_7.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_7_material">
+                <color rgba="0.64705882352941179736 0.64705882352941179736 0.64705882352941179736 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing_7.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/2ft_30mm_t-slotted_framing_5537t902_1.stl"/>
+            </geometry>
+            <material name="2ft_30mm_t-slotted_framing_5537t902_1_material">
+                <color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/2ft_30mm_t-slotted_framing_5537t902_1.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/2ft_30mm_t-slotted_framing_5537t902.stl"/>
+            </geometry>
+            <material name="2ft_30mm_t-slotted_framing_5537t902_material">
+                <color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/2ft_30mm_t-slotted_framing_5537t902.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/m6x1x18_-_91290a323.stl"/>
+            </geometry>
+            <material name="m6x1x18_-_91290a323_material">
+                <color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/m6x1x18_-_91290a323.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/1ft_30_mm_t-slotted_framing_5537t902_8.stl"/>
+            </geometry>
+            <material name="1ft_30_mm_t-slotted_framing_5537t902_8_material">
+                <color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/1ft_30_mm_t-slotted_framing_5537t902_8.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.15238747698709115275 -0.21280863336416100395 -0.86190592507668872813" rpy="-3.1415926535897922278 -5.608597084420992657e-16 1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/part_3.stl"/>
+            </geometry>
+            <material name="part_3_material">
+                <color rgba="0.2313725490196078538 0.38039215686274507888 0.7058823529411765163 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.15238747698709115275 -0.21280863336416100395 -0.86190592507668872813" rpy="-3.1415926535897922278 -5.608597084420992657e-16 1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/part_3.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/m6_locknut_nylon_insert_-_90576a115_3.stl"/>
+            </geometry>
+            <material name="m6_locknut_nylon_insert_-_90576a115_3_material">
+                <color rgba="0.76862745098039220171 0.88627450980392152857 0.95294117647058818044 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/m6_locknut_nylon_insert_-_90576a115_3.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing_4.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_4_material">
+                <color rgba="0.98039215686274505668 0.71372549019607844922 0.0039215686274509803377 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing_4.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/m6_locknut_-_90576a115_2.stl"/>
+            </geometry>
+            <material name="m6_locknut_-_90576a115_2_material">
+                <color rgba="0.64705882352941179736 0.64705882352941179736 0.64705882352941179736 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/m6_locknut_-_90576a115_2.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/arm_attachment_plate.stl"/>
+            </geometry>
+            <material name="arm_attachment_plate_material">
+                <color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/arm_attachment_plate.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/panel_retainers_2.stl"/>
+            </geometry>
+            <material name="panel_retainers_2_material">
+                <color rgba="0.54117647058823525885 0.68235294117647060652 0.83921568627450982003 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/panel_retainers_2.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/2ft_30mm_t-slotted_framing_5537t902_3.stl"/>
+            </geometry>
+            <material name="2ft_30mm_t-slotted_framing_5537t902_3_material">
+                <color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/2ft_30mm_t-slotted_framing_5537t902_3.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/1ft_30_mm_t-slotted_framing_5537t902_2.stl"/>
+            </geometry>
+            <material name="1ft_30_mm_t-slotted_framing_5537t902_2_material">
+                <color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/1ft_30_mm_t-slotted_framing_5537t902_2.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/panel_retainers.stl"/>
+            </geometry>
+            <material name="panel_retainers_material">
+                <color rgba="0.54117647058823525885 0.68235294117647060652 0.83921568627450982003 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/panel_retainers.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/1ft_30_mm_t-slotted_framing_5537t902_5.stl"/>
+            </geometry>
+            <material name="1ft_30_mm_t-slotted_framing_5537t902_5_material">
+                <color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/1ft_30_mm_t-slotted_framing_5537t902_5.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/1ft_30_mm_t-slotted_framing_5537t902_4.stl"/>
+            </geometry>
+            <material name="1ft_30_mm_t-slotted_framing_5537t902_4_material">
+                <color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/1ft_30_mm_t-slotted_framing_5537t902_4.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/m6_locknut_-_90576a115_1.stl"/>
+            </geometry>
+            <material name="m6_locknut_-_90576a115_1_material">
+                <color rgba="0.64705882352941179736 0.64705882352941179736 0.64705882352941179736 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/m6_locknut_-_90576a115_1.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing_4.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_4_material">
+                <color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing_4.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.22914999999997920366 0.1711500000000023558 -0.20175592507669531939" rpy="3.1415926535897917837 -5.8592881631900076956e-15 -1.5707963267949007768" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/surface_bracket_30mm_t-slotted_framing_5537t972.stl"/>
+            </geometry>
+            <material name="surface_bracket_30mm_t-slotted_framing_5537t972_material">
+                <color rgba="0.64705882352941179736 0.64705882352941179736 0.64705882352941179736 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.22914999999997920366 0.1711500000000023558 -0.20175592507669531939" rpy="3.1415926535897917837 -5.8592881631900076956e-15 -1.5707963267949007768" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/surface_bracket_30mm_t-slotted_framing_5537t972.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.009999999999999995004 0.034999999999999982514 0" rpy="3.141592653589793116 -0 -2.4069310442751969997e-32" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/right_-_stepper_motor_housing.stl"/>
+            </geometry>
+            <material name="right_-_stepper_motor_housing_material">
+                <color rgba="0.54117647058823525885 0.68235294117647060652 0.83921568627450982003 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.009999999999999995004 0.034999999999999982514 0" rpy="3.141592653589793116 -0 -2.4069310442751969997e-32" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/right_-_stepper_motor_housing.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/m6x1x18_-_91290a323_2.stl"/>
+            </geometry>
+            <material name="m6x1x18_-_91290a323_2_material">
+                <color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/m6x1x18_-_91290a323_2.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/m6x1x18_-_91290a323_5.stl"/>
+            </geometry>
+            <material name="m6x1x18_-_91290a323_5_material">
+                <color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/m6x1x18_-_91290a323_5.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/m6x1x18_-_91290a323_3.stl"/>
+            </geometry>
+            <material name="m6x1x18_-_91290a323_3_material">
+                <color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/m6x1x18_-_91290a323_3.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing_1.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_1_material">
+                <color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing_1.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.22914999999998120206 0.17115000000000621383 -0.20175592507669598552" rpy="3.1415926535897917837 -1.354120484825406695e-14 -1.5707963267949078823" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/surface_bracket_30mm_t-slotted_framing_5537t972_1.stl"/>
+            </geometry>
+            <material name="surface_bracket_30mm_t-slotted_framing_5537t972_1_material">
+                <color rgba="0.64705882352941179736 0.64705882352941179736 0.64705882352941179736 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.22914999999998120206 0.17115000000000621383 -0.20175592507669598552" rpy="3.1415926535897917837 -1.354120484825406695e-14 -1.5707963267949078823" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/surface_bracket_30mm_t-slotted_framing_5537t972_1.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_material">
+                <color rgba="0.76862745098039220171 0.88627450980392152857 0.95294117647058818044 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.23114999999998608882 0.17115000000000674119 -0.23855592507665152047" rpy="-3.141592653589793116 -2.8349688781380111757e-30 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/lift_platform.stl"/>
+            </geometry>
+            <material name="lift_platform_material">
+                <color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.23114999999998608882 0.17115000000000674119 -0.23855592507665152047" rpy="-3.141592653589793116 -2.8349688781380111757e-30 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/lift_platform.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/1ft_30_mm_t-slotted_framing_5537t902.stl"/>
+            </geometry>
+            <material name="1ft_30_mm_t-slotted_framing_5537t902_material">
+                <color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/1ft_30_mm_t-slotted_framing_5537t902.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.009999999999999995004 0.034999999999999982514 0" rpy="3.141592653589793116 -0 -2.4069310442751969997e-32" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/left_-_stepper_motor_housing.stl"/>
+            </geometry>
+            <material name="left_-_stepper_motor_housing_material">
+                <color rgba="0.54117647058823525885 0.68235294117647060652 0.83921568627450982003 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.009999999999999995004 0.034999999999999982514 0" rpy="3.141592653589793116 -0 -2.4069310442751969997e-32" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/left_-_stepper_motor_housing.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing_3.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_3_material">
+                <color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing_3.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/arm_attachment_plate_1.stl"/>
+            </geometry>
+            <material name="arm_attachment_plate_1_material">
+                <color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/arm_attachment_plate_1.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing_2.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_2_material">
+                <color rgba="0.49803921568627451677 0.49803921568627451677 0.49803921568627451677 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing_2.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.12241252301290876658 -0.2128086333641609762 -0.86190592507668850608" rpy="-3.1415926535897922278 -5.608597084420992657e-16 1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/part_3.stl"/>
+            </geometry>
+            <material name="part_3_material">
+                <color rgba="0.2313725490196078538 0.38039215686274507888 0.7058823529411765163 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.12241252301290876658 -0.2128086333641609762 -0.86190592507668850608" rpy="-3.1415926535897922278 -5.608597084420992657e-16 1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/part_3.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/2ft_30mm_t-slotted_framing_5537t902_2.stl"/>
+            </geometry>
+            <material name="2ft_30mm_t-slotted_framing_5537t902_2_material">
+                <color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/2ft_30mm_t-slotted_framing_5537t902_2.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing_5.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_5_material">
+                <color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing_5.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing_7.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_7_material">
+                <color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing_7.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/m6_locknut_nylon_insert_-_90576a115_2.stl"/>
+            </geometry>
+            <material name="m6_locknut_nylon_insert_-_90576a115_2_material">
+                <color rgba="0.76862745098039220171 0.88627450980392152857 0.95294117647058818044 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/m6_locknut_nylon_insert_-_90576a115_2.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing_2.stl"/>
+            </geometry>
+            <material name="5537t864_t-slotted_framing_2_material">
+                <color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/5537t864_t-slotted_framing_2.stl"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/m6x1x18_-_91290a323_6.stl"/>
+            </geometry>
+            <material name="m6x1x18_-_91290a323_6_material">
+                <color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.2311499999999790389 0.17115000000000279989 -0.23855592507669026725" rpy="3.1415926535897917837 -5.8008882962625440606e-15 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/m6x1x18_-_91290a323_6.stl"/>
+            </geometry>
+        </collision>
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="0" />
+            <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
+        </inertial>
+    </link>
+
+    <joint name="torso_and_base_joint" type="fixed">
+        <origin xyz="-1.2462629915069300957e-05 0.065144501186841841101 0.37115000047208140943" rpy="3.141592653589793116 1.156482317317871725e-16 -1.5707963267949023312" />
+        <parent link="base_link" />
+        <child link="torso_link" />
+        <axis xyz="0 0 1"/>
+        <limit effort="1" velocity="20" />
+        <joint_properties friction="0.0"/>
+    </joint>
+
+    <link name="caster_link">
+        <visual>
+            <origin xyz="-0.046037500000000022848 0.078740000000000004432 -0.015875000000000000222" rpy="-1.570796326794896558 -0 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/caster_link.stl"/>
+            </geometry>
+            <material name="caster_link_material">
+                <color rgba="0.64705882352941179736 0.64705882352941179736 0.64705882352941179736 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.046037500000000022848 0.078740000000000004432 -0.015875000000000000222" rpy="-1.570796326794896558 -0 0" />
+            <geometry>
+                <mesh filename="package://ob1_base_description/urdf/drivetrain_specs/caster_link.stl"/>
+            </geometry>
+        </collision>
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="0" />
+            <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
+        </inertial>
+    </link>
+
+    <joint name="caster_and_base_joint" type="continuous">
+        <origin xyz="0.015938897284511241437 -0.16789293881321706858 -0.088900000000000006795" rpy="-1.570796326794896558 -2.2204460492503135739e-16 -1.570796326794896558" />
+        <parent link="base_link" />
+        <child link="caster_link" />
+        <axis xyz="0 0 1"/>
+        <limit effort="1" velocity="20" />
+        <joint_properties friction="0.0"/>
+    </joint>
+
+
+</robot>

@@ -1155,7 +1155,7 @@
         </inertial>
     </link>
 
-    <joint name="left_wheel_joint_and_base_joint" type="continuous">
+    <joint name="left_wheel_and_base_joint" type="continuous">
         <origin xyz="-0.28096485271548882201 0.13214456151169415299 -0.060433751154980112907" rpy="1.57079632679489678 -0 1.570796326794896558" />
         <parent link="base_link" />
         <child link="wheel_left_link" />

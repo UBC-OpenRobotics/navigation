@@ -5,6 +5,20 @@
 The current navigation stack which uses ROS's navigation stack including the move_base package
 ![move_base_node](https://wiki.ros.org/move_base?action=AttachFile&do=view&target=overview_tf.png) 
 
+### ROS Packages
+
+There are several ros packages in this repo that are part of the navigation stack.
+
+Developed by us:
+* navigation: code and test cases for navigation and control
+* ob1_base_description: urdf, gazebo, and cad model for open robotic's ob1 base
+
+External (as git submodules of the repo):
+* [depthimage_to_laserscan](https://github.com/ros-perception/depthimage_to_laserscan): converts depth camera feed into laser scan message for localization tasks
+* [realsense_gazebo_plugin](https://github.com/issaiass/realsense_gazebo_plugin): gazebo plugin for intel realsense camera
+* [realsense_description](https://github.com/issaiass/realsense2_description): urdf, gazebo, and cad models for intel realsense cameras
+* [turtlebot3_simulations](https://github.com/ROBOTIS-GIT/turtlebot3_simulations/tree/noetic-devel): gazebo worlds for simulation
+
 ### Registry available ROS Package Requirements
 ```bash
 sudo apt-get install ros-noetic-moveit-*
@@ -13,21 +27,18 @@ sudo apt-get install ros-noetic-turtlebot3-*
 sudo apt-get install ros-noetic-explore-lite
 ```
 
-### ROS Package Requirements
+### Setting up the ROS workspace and packages
 ```bash
-mkdir -p ~/catkin_ws/src
-cd ~/catkin_ws/src
-git clone https://github.com/UBC-OpenRobotics/navigation.git
-git clone -b noetic-devel https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
-cd ~/catkin_ws/
-catkin build # or catkin_make
+mkdir ~/catkin_ws
+cd ~/catkin_ws
+git clone --recurse-submodules -j8 https://github.com/UBC-OpenRobotics/navigation.git src
+catkin build
 ```
 
 ### Environment variables
 ```bash
 export TURTLEBOT3_MODEL=waffle
 ```
-
 
 ## Navigation
 **Troubleshooting**

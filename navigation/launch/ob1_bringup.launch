@@ -24,9 +24,6 @@
   <!-- launch camera driver -->
   <include file="$(find realsense2_camera)/launch/rs_camera.launch"/>
 
-  <!-- Launch gmapping -->
-  <include file="$(find navigation)/launch/gmapping.launch"/>
-
   <!-- move_base -->
   <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
     <param name="base_local_planner" value="dwa_local_planner/DWAPlannerROS" />

@@ -175,7 +175,7 @@
 
   <link name="base_scan"/>
 
-  <xacro:sensor_d435 name="camera" topics_ns="camera" parent="base_scan" publish_pointcloud="true">
+  <xacro:sensor_d435 name="camera" parent="base_scan">
     <origin xyz="0 0 0" rpy="1.57079632679 -1.57079632679 0" />
   </xacro:sensor_d435>
 

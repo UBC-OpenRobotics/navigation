@@ -27,10 +27,6 @@
   <!-- Launch gmapping -->
   <include file="$(find navigation)/launch/gmapping.launch"/>
 
-  <!-- Launch AMCL -->
-  <!-- <include file="$(find navigation)/launch/amcl.launch"/> -->
-
-
   <!-- move_base -->
   <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
     <param name="base_local_planner" value="dwa_local_planner/DWAPlannerROS" />

@@ -21,9 +21,6 @@
     <param name="rate" value="50"/>
   </node>
 
-  <!-- launch camera driver -->
-  <include file="$(find realsense2_camera)/launch/rs_camera.launch"/>
-
   <!-- move_base -->
   <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
     <param name="base_local_planner" value="dwa_local_planner/DWAPlannerROS" />
@@ -36,31 +33,6 @@
     <remap from="cmd_vel" to="$(arg cmd_vel_topic)"/>
     <remap from="odom" to="$(arg odom_topic)"/>
     <param name="DWAPlannerROS/min_vel_x" value="0.0" if="$(arg move_forward_only)" />
-  </node>
-
-  <!-- Depth Image to Laser Scan Node -->
-  <node name="ob1_d435_depthimage_to_laserscan" pkg="depthimage_to_laserscan" type="depthimage_to_laserscan" args="">
-
-    <remap from="image"       to="/camera/depth/image_rect_raw"/> <!-- change here for your camera depth topic name. Default: "/camera/depth/image_raw" -->
-
-    <remap from="camera_info" to="/camera/depth/camera_info"/> 
-    <!-- the remap for camera_info by default uses the same path as the one given to the image topic. Default: "<path_to_image_topic>/camera_info>" -->
-
-    <!-- PARAMETERS: -->
-    <!-- These are the default values. --> 
-    <param name="scan_height"     type="int"    value="1"/> <!-- default: 1 pixel. Number of pixel rows used to generate laser scan. -->
-    <param name="scan_time"       type="double" value="0.033"/> <!-- default:0.033, 30 FPS . Time between scans. -->
-    <param name="range_min"       type="double" value="0.45"/> <!--default:0.45m. Ranges less than this are considered -Inf. -->
-    <param name="range_max"       type="double" value="10.0"/> <!--default: 10m. Ranges less than this are considered +Inf. -->
-    <param name="output_frame_id" type="str"    value="camera_depth_frame"/> <!--default: camera_depth_frame. Frame id of the laser scan. -->
-  </node>
-
-  <node name="ob1_odometry_publisher" pkg="navigation" type="odom_publisher.py"></node>
-  
-  <!-- Launch the rosserial_python node -->
-  <node name="rosserial_node" pkg="rosserial_python" type="serial_node.py">
-    <param name="port" value="/dev/ttyUSB0"/> <!-- Replace with the correct serial port -->
-    <param name="baud" value="115200"/> <!-- Replace with the correct baud rate --> 
   </node>
 
   <!-- RVIZ -->

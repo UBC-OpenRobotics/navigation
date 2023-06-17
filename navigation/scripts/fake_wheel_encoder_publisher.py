@@ -21,7 +21,7 @@ def fake_wheel_encoder_publisher():
 
     while not rospy.is_shutdown():
         wheel_data = wheel_encoder_data()
-        wheel_data.rpm = rpm if is_dynamic else 100.0
+        wheel_data.rpm = rpm if is_dynamic else 0.5
         wheel_data.spin_direction = spin_direction if is_dynamic else True # Forward spin direction
 
         publisher_left.publish(wheel_data)

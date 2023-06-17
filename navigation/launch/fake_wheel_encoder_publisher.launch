@@ -1,0 +1,5 @@
+<launch>
+  <node pkg="navigation" name="fake_wheel_encoder_publisher" type="fake_wheel_encoder_publisher.py">
+  <param name="dynamic" value="false"/>
+  </node>
+</launch>

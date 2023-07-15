@@ -22,6 +22,7 @@
   <joint name="scan_joint" type="fixed">
     <parent link="base_link"/>
     <child link="base_scan"/>
-    <origin xyz="0.275 0 0.41" rpy="1.57 0 1.57"/>
+    <!-- <origin xyz="0.275 0 0.41" rpy="1.57 0 1.57"/> -->
+    <origin xyz="0 -0.275 0.41" rpy="1.57 0 0"/>
   </joint>
 </robot>

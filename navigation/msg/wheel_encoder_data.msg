@@ -1,0 +1,2 @@
+float32 rpm
+bool spin_direction

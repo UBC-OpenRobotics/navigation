@@ -1,27 +1,47 @@
 #!/usr/bin/env python3
 import rospy
-from geometry_msgs.msg import PoseStamped, Pose, Point, PointStamped, Quaternion, Twist, TransformStamped
-from nav_msgs.msg import Odometry
+from std_msgs.msg import String
+
 from tf import transformations
 import tf
 import numpy as np
+from geometry_msgs.msg import PoseStamped, Pose, Point, PointStamped, Quaternion, Twist, TransformStamped
+from nav_msgs.msg import Odometry
+
+from navigation.msg import wheel_encoder_data
+from fake_wheel_encoder_publisher import fake_wheel_raduis_in_meters, fake_wheel_distance_in_meters
 
 v_lin = 0
 v_th = 0
 
+left_rpm = 0
+right_rpm = 0
 
 def vel_cb(msg:Twist):
     global v_lin, v_th
     v_lin = msg.linear.x
     v_th = msg.angular.z
 
-def odom_publisher():
+def process_encoder(data: wheel_encoder_data, is_right_wheel: bool):
+    # https://answers.ros.org/question/306140/actual-wheels-rpm-velocities-from-ticks-target-velocity-and-robot-velocity/
+    global left_rpm, right_rpm, v_lin, v_th
+    rpm = data.rpm if data.spin_direction else -data.rpm
+    if is_right_wheel:
+        right_rpm = rpm
+    else:
+        left_rpm = rpm
+    
+    v_lin = (left_rpm + right_rpm) / 120 * (fake_wheel_raduis_in_meters * 2) * np.pi
+    v_th = ((right_rpm - left_rpm) / 120 * (fake_wheel_distance_in_meters * 2) * np.pi) / fake_wheel_distance_in_meters
 
+def odom_publisher():
     rospy.init_node("ob1_odometry_publisher")
 
-    odom_publisher = rospy.Publisher("odom",Odometry)
-    rospy.Subscriber("cmd_vel", Twist, vel_cb)
+    odom_publisher = rospy.Publisher("odom",Odometry, queue_size=5) # arbitrary queue_value
     odom_tf_broadcaster = tf.TransformBroadcaster()
+
+    rospy.Subscriber("fake_wheel_encoder_publisher/left", wheel_encoder_data, process_encoder, False)
+    rospy.Subscriber("fake_wheel_encoder_publisher/right", wheel_encoder_data, process_encoder, True)
 
     t_current = rospy.Time.now()
     t_last = rospy.Time.now()
@@ -87,6 +107,7 @@ def odom_publisher():
         r.sleep()
 
 if __name__ == '__main__':
+    print("________________Starting up Odom publisher________________")
     odom_publisher()
 
 

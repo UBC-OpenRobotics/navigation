@@ -35,7 +35,7 @@ def fake_wheel_encoder_publisher():
         wheel_data_left.rpm = rpm_left if is_dynamic else 0.5
         wheel_data_left.spin_direction = spin_direction_left if is_dynamic else True # Forward spin direction
 
-        publisher_left.publish(wheel_data_right)
+        publisher_left.publish(wheel_data_left)
         publisher_right.publish(wheel_data_right)
 
         rate.sleep()

@@ -32,7 +32,7 @@ def process_encoder(data: wheel_encoder_data, is_right_wheel: bool):
         left_rpm = rpm
     
     v_lin = (left_rpm + right_rpm) / 120 * (fake_wheel_raduis_in_meters * 2) * np.pi
-    v_th = ((right_rpm - left_rpm) / 120 * (fake_wheel_distance_in_meters * 2) * np.pi) / fake_wheel_distance_in_meters
+    v_th = ((right_rpm - left_rpm) / 120 * (fake_wheel_raduis_in_meters * 2) * np.pi) / fake_wheel_distance_in_meters
 
 def odom_publisher():
     rospy.init_node("ob1_odometry_publisher")

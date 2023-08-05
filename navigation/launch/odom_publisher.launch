@@ -1,4 +1,3 @@
 <launch>
-  <node pkg="navigation" name="odom_publisher" type="scripts/odom_publisher.py">
-  </node>
+  <node name="ob1_odometry_publisher" pkg="navigation" type="odom_publisher.py" output="screen"></node>
 </launch>

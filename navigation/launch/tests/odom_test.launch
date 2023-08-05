@@ -1,0 +1,7 @@
+<launch>
+    <!-- Launching Fake Wheel Encoder Node -->
+    <include file="$(find navigation)/launch/fake_wheel_encoder_publisher.launch"/>
+
+    <!-- Launching Odom Publisher Node -->
+    <include file="$(find navigation)/launch/odom_publisher.launch"/>
+</launch>

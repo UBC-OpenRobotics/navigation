@@ -19,9 +19,9 @@ def fake_wheel_encoder_publisher():
     publisher_right = rospy.Publisher("fake_wheel_encoder_publisher/right", wheel_encoder_data, queue_size=5) # change queue_size if needed
     publisher_left = rospy.Publisher("fake_wheel_encoder_publisher/left", wheel_encoder_data, queue_size=5)
     rate = rospy.Rate(1) 
-    is_dynamic = rospy.get_param('dynamic', False)
-    fake_wheel_raduis_in_meters = rospy.get_param('wheel_raduis', False)
-    fake_wheel_distance_in_meters = rospy.get_param('wheel_distance', False)
+    is_dynamic = rospy.get_param('~dynamic', False)
+    fake_wheel_raduis_in_meters = rospy.get_param('~wheel_radius', fake_wheel_distance_in_meters)
+    fake_wheel_distance_in_meters = rospy.get_param('~wheel_distance', fake_wheel_distance_in_meters)
 
     if(is_dynamic):
         rospy.Subscriber("cmd_vel", Twist, vel_cb)
@@ -35,7 +35,7 @@ def fake_wheel_encoder_publisher():
         wheel_data_left.rpm = rpm_left if is_dynamic else 0.5
         wheel_data_left.spin_direction = spin_direction_left if is_dynamic else True # Forward spin direction
 
-        publisher_left.publish(wheel_data_right)
+        publisher_left.publish(wheel_data_left)
         publisher_right.publish(wheel_data_right)
 
         rate.sleep()
